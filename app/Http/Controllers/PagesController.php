@@ -20,5 +20,9 @@ class PagesController extends Controller
         return view('pages/uitleg');
     }
 
+    public function opdrachten_create() {
+        return view('pages/opdrachten_create');
+    }
+
 
 }

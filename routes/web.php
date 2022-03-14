@@ -20,6 +20,8 @@ Route::get('/opdrachten', [PagesController::class, 'opdrachten'])->name('opdrach
 
 Route::get('/uitleg', [PagesController::class, 'uitleg'])->name('uitleg');
 
+Route::get('/opdrachten_create', [PagesController::class, 'opdrachten_create'])->name('opdrachten_create');
+
 
 
 Route::get('/dashboard', function () {
