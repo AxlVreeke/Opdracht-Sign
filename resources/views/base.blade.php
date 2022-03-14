@@ -19,10 +19,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="">Opdrachten</a>
+                        <a class="nav-link" href="{{route('opdrachten')}}">Opdrachten</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Uitleg</a>
+                        <a class="nav-link" href="{{route('uitleg')}}">Uitleg</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('login')}}">Login</a>

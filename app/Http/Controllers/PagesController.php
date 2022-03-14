@@ -12,5 +12,13 @@ class PagesController extends Controller
         return view('pages/welcome');
     }
 
+    public function opdrachten() {
+        return view('pages/opdrachten');
+    }
+
+    public function uitleg() {
+        return view('pages/uitleg');
+    }
+
 
 }

@@ -16,6 +16,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PagesController::class, 'home'])->name('home');
 
+Route::get('/opdrachten', [PagesController::class, 'opdrachten'])->name('opdrachten');
+
+Route::get('/uitleg', [PagesController::class, 'uitleg'])->name('uitleg');
+
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
