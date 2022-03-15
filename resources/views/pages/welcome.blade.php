@@ -37,7 +37,7 @@
             <div class="carousel-item active">
                 <div class="overlay-image" style="background-image:url(../img/placeholder-home.avif);"></div>
                 <div class="carousel-content">
-                    <h1>Example Headline</h1>
+                    <h1>Welkom op de Sign page!</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid architecto aut cupiditate deleniti, error ex exercitationem harum hic maxime, necessitatibus nobis quos recusandae sequi, tenetur vel voluptas voluptatem voluptates.</p>
                 </div>
             </div>
@@ -58,6 +58,12 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </a>
         </div>
+    </div>
+    <div class="container">
+        <div class="flex-wrapper">
+            <span><h2>Een opdracht laten maken?</h2></span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem id incidunt omnis repellendus soluta tempore vero! A ab dolorem eos eveniet ipsam iste provident, quos sequi ut, vel voluptate voluptatum?</p>
     </div>
 
 @endsection

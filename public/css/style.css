@@ -5,3 +5,13 @@
 .input-group-text{
     width: 200px;
 }
+
+.flex-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-wrapper span{
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
