@@ -1,3 +1,7 @@
 .input-group{
     width: 800px;
 }
+
+.input-group-text{
+    width: 200px;
+}

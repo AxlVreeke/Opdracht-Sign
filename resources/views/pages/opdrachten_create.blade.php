@@ -14,8 +14,18 @@
     <span class="input-group-text" id="inputGroup-sizing-default">Opdracht omschrijving:</span>
     <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
     </div>
-
-
+    <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Klant:</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Student:</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Werkwijzer:</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
     <div class="input-group mb-3">
     <label class="input-group-text" for="inputGroupSelect01">Klus:</label>
     <select class="form-select" id="inputGroupSelect01">
