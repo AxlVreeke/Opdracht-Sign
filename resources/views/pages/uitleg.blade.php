@@ -14,7 +14,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><span>100% </span>beveelt Sign aan!</h5>
                     <h6 class="card-subtitle mb-2 text-muted">9 van de 10 Sterren</h6>
-                    <p class="card-text">Sign gets all</p>
+                    <p class="card-text">Sign pogchamp</p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -40,7 +40,12 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur deleniti deserunt dignissimos distinctio, doloremque enim eos fugit iure labore libero minima nesciunt nobis optio, quos rem repudiandae tempora vero!</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores at consequatur cum delectus doloribus eos facilis fugit libero minus, molestiae nemo quis, reiciendis rerum, tempore totam velit voluptatum.</p>
                 </div>
-                <p>test</p>
+                <div class="explanation-info">
+                    <p><img src="img/school4.jpg" alt="schoolfoto 4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi dolorem, est eum eveniet expedita facilis fugit illo incidunt iure maxime nihil, qui recusandae repellat repellendus repudiandae similique sit velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores excepturi id labore maxime officia, pariatur reiciendis suscipit veritatis. Dignissimos iusto nam odit suscipit! A aliquam architecto aut ea natus sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae eius esse quam similique! Accusamus, at, debitis dolor facere impedit in mollitia nisi placeat possimus repellat repudiandae saepe tenetur velit?</p>
+                </div>
+                <div class="explanation-button">
+                    <button type="button" class="btn btn-primary btn-lg">Opdracht aanmaken -></button>
+                </div>
             </div>
         </div>
     </div>
