@@ -52,15 +52,22 @@
 }
 
 .explanation-images{
-    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
 }
 
 .explanation-images img{
-    float: left;
-    margin-left: 125px;
     margin-top: 20px;
+    object-fit: cover;
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    overflow: hidden;
+}
+
+.explanation-text{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin-top: 20px;
 }

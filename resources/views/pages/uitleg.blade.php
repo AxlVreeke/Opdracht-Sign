@@ -34,7 +34,11 @@
                     <img src="img/school.jpg" alt="schoolfoto 1">
                     <img src="img/school2.jpg" alt="schoolfoto 2">
                     <img src="img/school3.jpg" alt="schoolfoto 3">
-                    <p>cool</p>
+                </div>
+                <div class="explanation-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut autem eum molestiae officiis omnis qui quos. Accusamus dolore ea eaque ex excepturi nam reiciendis voluptates voluptatum. Iure sequi ut vel.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur deleniti deserunt dignissimos distinctio, doloremque enim eos fugit iure labore libero minima nesciunt nobis optio, quos rem repudiandae tempora vero!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores at consequatur cum delectus doloribus eos facilis fugit libero minus, molestiae nemo quis, reiciendis rerum, tempore totam velit voluptatum.</p>
                 </div>
                 <p>test</p>
             </div>
