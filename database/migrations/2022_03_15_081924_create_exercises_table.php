@@ -17,6 +17,9 @@ class CreateExercisesTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('description');
+            $table->string('customer');
+            $table->string('student');
+            $table->string('working_method');
             $table->string('job');
             $table->decimal('format');
             $table->integer('number');
