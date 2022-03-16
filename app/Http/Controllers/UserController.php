@@ -25,7 +25,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.create');
     }
 
     /**
@@ -47,7 +47,9 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+        $users = User::findorfail($id);
+        return view('admin/show')
+            ->withuser($users);
     }
 
     /**
@@ -58,7 +60,9 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $users = User::findorfail($id);
+        return view('admin/edit')
+            ->withuser($users);
     }
 
     /**
@@ -81,6 +85,15 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $request->validate
+        ([
+            'admin_id'=>'required',
+        ]);
+
+        $user = User::findorfail($id);
+        $user->admin_id = $request->admin_id;
+        $user->save();
+
+        return redirect()->route('admin.index');
     }
 }
