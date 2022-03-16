@@ -2,30 +2,7 @@
 
 @section('content')
     <style>
-        .carousel-item{
-            height: 32rem;
-            background: #000;
-            color: white;
-            position: relative;
-        }
-        .carousel-content{
-            position: absolute;
-            bottom: 0;
-            left: 6.5%;
-            right: 6.5%;
-            z-index: 20;
-            padding-bottom: 50px;
-        }
-        .overlay-image{
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            top: 0;
-            background-position: center;
-            background-size: cover;
-            opacity: 0.5;
-        }
+
     </style>
 
     <div id="#myCarousel" class="carousel slide" data-ride="carousel">
@@ -64,6 +41,6 @@
             <span><h2>Een opdracht laten maken?</h2></span>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem id incidunt omnis repellendus soluta tempore vero! A ab dolorem eos eveniet ipsam iste provident, quos sequi ut, vel voluptate voluptatum?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae explicabo fugit iusto labore, odit officia, omnis quae quidem rem soluta temporibus tenetur, unde. Consectetur eligendi ex fugiat perspiciatis ut?</p>
     </div>
-
 @endsection
