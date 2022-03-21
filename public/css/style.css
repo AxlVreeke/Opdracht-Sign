@@ -8,6 +8,66 @@
 
 /* colors */
 
+.yellow{
+    background-color: #ffcc00;
+}
+
+.lightpink{
+    background-color: #f9aecd;
+}
+
+.violet{
+    background-color: #beb0ff;
+}
+
+.cyan{
+    background-color: #56ddf0;
+}
+
+.lightgreen{
+    background-color: #c0ed0c;
+}
+
+.red{
+    background-color: #fc3232;
+}
+
+.pink{
+    background-color: #fa329c;
+}
+
+.purple{
+    background-color: #9535f9;
+}
+
+.blue{
+    background-color: #0050ff;
+}
+
+.green{
+    background-color: #2add5d;
+}
+
+.brown{
+    background-color: #660405;
+}
+
+.grape{
+    background-color: #78034a;
+}
+
+.darkpurple{
+    background-color: #69197c;
+}
+
+.navy{
+    background-color: #03357c;
+}
+
+.darkgreen{
+    background-color: #014c35;
+}
+
 .black{
     background-color: #000;
 }
@@ -16,24 +76,21 @@
     background-color: #fff;
 }
 
-.gray{
-    background-color: #808080;
-}
-
-.silver{
-    background-color: #cococo;
-}
-
 /* home page css */
 
 .flex-wrapper{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    padding-top: 30px;
+    margin-top: 30px;
+    padding-top: 40px;
     margin-bottom: 25px;
 }
 
+.flex-wrapper span{
+    color: #3bc9da;
+    font-weight: bold;
+    font-family: Felix;
+}
 .parallax {
     /* The image used */
     background-image: url(../img/placeholder-home.avif);
@@ -48,6 +105,11 @@
 .parallax-item{
     background: rgba(0,0,0,0.5);
     min-height: 250px;
+    padding-bottom: 30px;
+}
+
+.parallax-item .container .explanation-button{
+    margin-top: 28px;
 }
 
 /* carousel css */

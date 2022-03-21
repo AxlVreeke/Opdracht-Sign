@@ -15,7 +15,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100 overlay-image" src="../img/placeholder-home.avif" alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption d-none d-md-block yellow">
                     <h5>Welkom op de Sign page!</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda blanditiis corporis doloremque, ea nobis porro repellat reprehenderit. Beatae consectetur nam nisi porro? Accusamus aliquid itaque laborum nobis nulla pariatur?</p>
                 </div>
@@ -46,11 +46,14 @@
     <div class="parallax">
         <div class="parallax-item">
             <div class="flex-wrapper text-light">
-                <h2>Direct beginnen?</h2>
+               <h2>Direct <span>beginnen</span>?</h2>
             </div>
             <div class="container text-light">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eaque eos necessitatibus repellat sit? Dolorem possimus quaerat sapiente velit! Dolor eos error eum in ipsa libero non saepe tenetur velit.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi architecto assumenda commodi consequuntur delectus dignissimos eius eos est, facere illo itaque laborum, magnam maiores, molestiae nostrum numquam tenetur velit.</p>
+                <div class="explanation-button">
+                    <button type="button" class="btn btn-primary btn-lg">Opdracht aanmaken -></button>
+                </div>
             </div>
         </div>
     </div>
