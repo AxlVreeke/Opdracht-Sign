@@ -6,6 +6,10 @@
     width: 200px;
 }
 
+html{
+    font-size: 20px;
+}
+
 /* colors */
 
 .yellow{
@@ -89,7 +93,7 @@
 .flex-wrapper span{
     color: #3bc9da;
     font-weight: bold;
-    font-family: Felix;
+    font-family: felix;
 }
 .parallax {
     /* The image used */
