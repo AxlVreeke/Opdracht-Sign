@@ -3,28 +3,28 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title"><span>100% </span>beveelt Sign aan!</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">9.5 van de 10 Sterren</h6>
-                    <p class="card-text">Sign is oprecht een banger</p>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title"><span>100% </span>beveelt Sign aan!</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">9 van de 10 Sterren</h6>
-                    <p class="card-text">Sign pogchamp</p>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title"><span>100% </span>beveelt Sign aan!</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">7.5 van de 10 Sterren</h6>
-                    <p class="card-text">cool</p>
-                </div>
-            </div>
-            <ul class="uitleg">
+{{--            <div class="card" style="width: 18rem;">--}}
+{{--                <div class="card-body">--}}
+{{--                    <h5 class="card-title"><span>100% </span>beveelt Sign aan!</h5>--}}
+{{--                    <h6 class="card-subtitle mb-2 text-muted">9.5 van de 10 Sterren</h6>--}}
+{{--                    <p class="card-text">Sign is oprecht een banger</p>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="card" style="width: 18rem;">--}}
+{{--                <div class="card-body">--}}
+{{--                    <h5 class="card-title"><span>100% </span>beveelt Sign aan!</h5>--}}
+{{--                    <h6 class="card-subtitle mb-2 text-muted">9 van de 10 Sterren</h6>--}}
+{{--                    <p class="card-text">Sign pogchamp</p>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="card" style="width: 18rem;">--}}
+{{--                <div class="card-body">--}}
+{{--                    <h5 class="card-title"><span>100% </span>beveelt Sign aan!</h5>--}}
+{{--                    <h6 class="card-subtitle mb-2 text-muted">7.5 van de 10 Sterren</h6>--}}
+{{--                    <p class="card-text">cool</p>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+            <ul class="ul-title">
                 <li>UITLEG</li>
             </ul>
             <div class="explanation-content">
@@ -44,7 +44,7 @@
                     <p><img src="img/school4.jpg" alt="schoolfoto 4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi dolorem, est eum eveniet expedita facilis fugit illo incidunt iure maxime nihil, qui recusandae repellat repellendus repudiandae similique sit velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores excepturi id labore maxime officia, pariatur reiciendis suscipit veritatis. Dignissimos iusto nam odit suscipit! A aliquam architecto aut ea natus sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae eius esse quam similique! Accusamus, at, debitis dolor facere impedit in mollitia nisi placeat possimus repellat repudiandae saepe tenetur velit?</p>
                 </div>
                 <div class="explanation-button">
-                    <button type="button" class="btn btn-primary btn-lg">Opdracht aanmaken -></button>
+                    <a class="btn btn-secondary" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
                 </div>
             </div>
         </div>
