@@ -29,7 +29,16 @@
             <label for="phone_number">Telefoonn nummer</label>
             <input type="tel" name="phone_number" id="phone_number" placeholder="0612345678" class="form-control">
 
-            <label for=""></label>
+            <br>
+
+            <input type="checkbox" name="admin_id" value="1">
+            <label for="admin_id">Dit is een Admin account</label>
+
+            <br>
+            <br>
+
+            <input type="submit" value="submit" class="btn btn-primary">
+
         </div>
     </from>
 
