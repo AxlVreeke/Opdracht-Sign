@@ -6,8 +6,9 @@
     width: 200px;
 }
 
-html{
+body{
     font-size: 20px;
+    font-family: Felix,"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif !Important;
 }
 
 /* colors */
@@ -93,7 +94,7 @@ html{
 .flex-wrapper span{
     color: #3bc9da;
     font-weight: bold;
-    font-family: felix;
+
 }
 .parallax {
     /* The image used */
