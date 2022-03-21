@@ -18,6 +18,9 @@
         <option value="9">Graveren op Hout / Acrylaat / Glazen</option>
     </select>
     </div>
+
+    <a href="{{route('exercises.create')}}" class="btn btn-primary">Nieuw opdracht aanmaken</a>
+
     <div class="container">
         <table class="table">
             <thead>
@@ -33,6 +36,5 @@
                 </tr>
             @endforeach
         </table>
-    </div>
 </div>
 @endsection

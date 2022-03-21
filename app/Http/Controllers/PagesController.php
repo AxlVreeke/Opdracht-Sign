@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Models\Exercise;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -13,16 +14,14 @@ class PagesController extends Controller
     }
 
     public function opdrachten() {
-        return view('pages/opdrachten');
+        $exercises = Exercise::all();
+        return view('pages/opdrachten')->with('exercises', $exercises);
     }
 
     public function uitleg() {
         return view('pages/uitleg');
     }
 
-    public function opdrachten_create() {
-        return view('pages/opdrachten_create');
-    }
 
 
 }

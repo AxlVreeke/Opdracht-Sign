@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\ExercisesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,7 +21,9 @@ Route::get('/opdrachten', [PagesController::class, 'opdrachten'])->name('opdrach
 
 Route::get('/uitleg', [PagesController::class, 'uitleg'])->name('uitleg');
 
-Route::get('/opdrachten_create', [PagesController::class, 'opdrachten_create'])->name('opdrachten_create');
+Route::group(['prefix' => 'dashboard', 'middleware' => 'auth'], function() {
+    Route::resource('exercises', ExercisesController::class);
+});
 
 
 
@@ -29,7 +32,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 Route::group(['prefix'=> 'admin', 'middleware'=>'auth'], function (){
-    Route::resource('admin', \App\Http\Controllers\UserController::class);
+    Route::resource('admin', \App\Http\Controllers\UsersController::class);
 });
 
 require __DIR__.'/auth.php';

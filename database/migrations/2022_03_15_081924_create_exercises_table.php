@@ -21,7 +21,7 @@ class CreateExercisesTable extends Migration
             $table->string('student');
             $table->string('working_method');
             $table->string('job');
-            $table->decimal('format');
+            $table->decimal('formaat');
             $table->integer('number');
             $table->string('file');
             $table->timestamps();
