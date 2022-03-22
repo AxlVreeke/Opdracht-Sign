@@ -67,10 +67,95 @@
 <main>
     @yield('content')
 </main>
-<footer class="bg-light text-center text-lg-start">
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-         © 2022 Copyright
+<!-- Footer -->
+<footer class="text-center text-lg-start text-muted" style="background-color: #03357c; padding-top: 1px; border-top: solid 1px black">
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-light">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4" style="border-bottom: solid 1px #fff; padding-bottom: 15px">
+                        <i class="fas me-3"></i>Sign
+                    </h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi iusto quis recusandae. A animi asperiores, at cum deleniti deserunt dignissimos et eum fuga ipsam laboriosam laborum nihil quaerat sequi!
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-light">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4" style="border-bottom: solid 1px #fff; padding-bottom: 15px">
+                        Links
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Angular</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">React</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Vue</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Laravel</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-light">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4"  style="border-bottom: solid 1px #fff; padding-bottom: 15px">
+                        Links
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Pricing</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Settings</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Orders</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Help</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-light">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4" style="border-bottom: solid 1px #fff; padding-bottom: 15px">
+                        Contact
+                    </h6>
+                    <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        info@example.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                    <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4 text-light" style="background-color: #072e62;">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="{{route('home')}}">Sign-opdracht.com</a>
     </div>
+    <!-- Copyright -->
 </footer>
+
 </body>
 </html>
