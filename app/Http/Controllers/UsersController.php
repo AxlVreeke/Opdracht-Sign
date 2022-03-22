@@ -8,6 +8,7 @@ use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Validation\Rules;
 
 class UsersController extends Controller
 {
@@ -19,7 +20,7 @@ class UsersController extends Controller
     public function index()
     {
         $users = User::all();
-        return view('admin/index')->with('users', $users);
+        return view('admin.index')->with('users', $users);
     }
 
     /**
@@ -36,7 +37,9 @@ class UsersController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
+     *
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function store(Request $request)
     {
@@ -56,7 +59,7 @@ class UsersController extends Controller
 
         Auth::login($user);
 
-        return redirect(RouteServiceProvider::HOME);
+        return redirect()->route(admin.index);
     }
 
     /**
@@ -94,17 +97,6 @@ class UsersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
         $request->validate
         ([
             'admin_id'=>'required',
@@ -115,5 +107,16 @@ class UsersController extends Controller
         $user->save();
 
         return redirect()->route('admin.index');
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
     }
 }
