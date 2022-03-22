@@ -18,10 +18,16 @@
                 @csrf
                 @method("PUT")
                 <div class="form">
-                    <label for="title">Admin veld</label>
-                    <input type="number" max="1" min="0" id="admin_id" name="admin_id" value="{{$user->admin_id}}" class="form-control">
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" value="1" name="admin_id">
+                        <label class="form-check-label" for="title">Admin account</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" value="0" name="admin_id">
+                        <label class="form-check-label" for="title">Normaal account</label>
+                    </div>
 
-                    <a href="{{ route('admin.index')}}"> <input type="submit" class="btn btn-success" value="Verzenden" ></a>
+                    <input type="submit" class="btn btn-success" value="Verzenden" >
 
                 </div>
             </form>
