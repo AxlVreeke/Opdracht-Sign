@@ -25,6 +25,10 @@ body{
     background-color: #beb0ff;
 }
 
+.violet-color{
+    color: #beb0ff;
+}
+
 .cyan{
     background-color: #56ddf0;
 }
@@ -63,6 +67,10 @@ body{
 
 .darkpurple{
     background-color: #69197c;
+}
+
+.darkpurple-color{
+    color: #69197c;
 }
 
 .navy{
@@ -139,17 +147,17 @@ body{
 
 /* uitleg page css */
 
-.card{
-    margin: 20px 20px 0px 0px;
-    padding-bottom: 10px;
-    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
-    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
-}
+/*.card{*/
+/*    margin: 20px 20px 0px 0px;*/
+/*    padding-bottom: 10px;*/
+/*    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);*/
+/*    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);*/
+/*}*/
 
-.card-title span{
-    color: #66cadf;
-    font-weight: bold;
-}
+/*.card-title span{*/
+/*    color: #66cadf;*/
+/*    font-weight: bold;*/
+/*}*/
 
 .ul-title{
     font-weight: bold;
@@ -159,7 +167,7 @@ body{
 
 .explanation-content{
     border-style: solid;
-    border-color: #cccccc;
+    border-color: #69197c;
     border-width: 2px;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -168,37 +176,40 @@ body{
 .explanation-content h2{
     text-align: center;
     padding-top: 20px;
+    font-weight: bold;
 }
 
 .explanation-content h3{
     text-align: center;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .explanation-images{
     display: flex;
-    justify-content: space-around;
-    gap: 50px;
 }
 
 .explanation-images img{
-    margin-top: 20px;
+    margin: 20px 0px 20px 0px;
     object-fit: cover;
     width: 200px;
     height: 200px;
+    border: 10px #69197c solid;
     border-radius: 100%;
-}
-
-.explanation-text{
-    display: flex;
-    justify-content: space-around;
-    gap: 50px;
-    margin-top: 20px;
 }
 
 .explanation-button{
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
+}
+
+.explanation-button a{
+    font-weight: bold;
+    border: #beb0ff 2px solid;
+}
+.explanation-button a:hover{
+    background-color: #beb0ff;
+    border: #69197c 2px solid;
 }
 
 .explanation-info{
