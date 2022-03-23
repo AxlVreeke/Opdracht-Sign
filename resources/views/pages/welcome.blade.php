@@ -1,7 +1,6 @@
 @extends('base')
 
 @section('content')
-
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -36,21 +35,44 @@
         <div class="flex-wrapper">
             <h2>Een opdracht laten maken?</h2>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem id incidunt omnis repellendus soluta tempore vero! A ab dolorem eos eveniet ipsam iste provident, quos sequi ut, vel voluptate voluptatum?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae explicabo fugit iusto labore, odit officia, omnis quae quidem rem soluta temporibus tenetur, unde. Consectetur eligendi ex fugiat perspiciatis ut?</p>
+        <div class="text-wrapper">
+            <div class="text-wrapper-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem id incidunt omnis repellendus soluta tempore vero! A ab dolorem eos eveniet ipsam iste provident, quos sequi ut, vel voluptate voluptatum?</p>
+            </div>
+            <div class="text-wrapper-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae explicabo fugit iusto labore, odit officia, omnis quae quidem rem soluta temporibus tenetur, unde. Consectetur eligendi ex fugiat perspiciatis ut?</p>
+            </div>
+        </div>
     </div>
     <div class="parallax">
         <div class="parallax-item">
             <div class="flex-wrapper text-light">
                <h2>Direct <span>beginnen</span>?</h2>
             </div>
-            <div class="container text-light">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eaque eos necessitatibus repellat sit? Dolorem possimus quaerat sapiente velit! Dolor eos error eum in ipsa libero non saepe tenetur velit.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi architecto assumenda commodi consequuntur delectus dignissimos eius eos est, facere illo itaque laborum, magnam maiores, molestiae nostrum numquam tenetur velit.</p>
+            <div class="container">
+                <div class="text-wrapper">
+                    <div class="text-wrapper-text text-light">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eaque eos necessitatibus repellat sit? Dolorem possimus quaerat sapiente velit! Dolor eos error eum in ipsa libero non saepe tenetur velit.</p>
+                    </div>
+                    <div class="text-wrapper-text text-light">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi architecto assumenda commodi consequuntur delectus dignissimos eius eos est, facere illo itaque laborum, magnam maiores, molestiae nostrum numquam tenetur velit.</p>
+                    </div>
+                </div>
                 <div class="explanation-button">
-                    <button type="button" class="btn btn-primary btn-lg">Opdracht aanmaken -></button>
+                    <button type="button" class="btn navy text-light btn-lg">Opdracht aanmaken -></button>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="flex-wrapper">
+            <h2>Lorem <span>ipsum</span></h2>
+        </div>
+        <div class="text-wrapper">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam blanditiis consequuntur corporis debitis laboriosam, optio quo soluta voluptate. Accusamus commodi cum delectus eius nemo pariatur perferendis quo veritatis, vero?</p>
+        </div>
+        <div class="text-wrapper">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, consectetur consequuntur dolore doloribus eius esse maiores maxime nihil nisi non optio perspiciatis praesentium quas saepe suscipit, tenetur, voluptatem? Consequuntur, odio?</p>
         </div>
     </div>
 @endsection
