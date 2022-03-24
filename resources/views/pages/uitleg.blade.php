@@ -1,5 +1,7 @@
 @extends('base')
-
+{{--@php--}}
+{{--$color = '#69197c';--}}
+{{--@endphp--}}
 @section('content')
     <div class="container">
         <div class="row">
@@ -27,7 +29,7 @@
             <ul class="ul-title darkpurple-color">
                 <li>UITLEG</li>
             </ul>
-            <div class="explanation-content darkpurple-color">
+            <div class="explanation-content">
                 <h2>Start uw eigen schoolproject</h2>
                 <h3>Het duurt slechts enkele minuten!</h3>
                 <div class="row">
@@ -63,3 +65,4 @@
         </div>
     </div>
 @endsection
+
