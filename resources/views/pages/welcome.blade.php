@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <div class="explanation-button">
-                    <button type="button" class="btn navy text-light btn-lg">Opdracht aanmaken -></button>
+                    <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
                 </div>
             </div>
         </div>
@@ -69,10 +69,12 @@
             <h2>Lorem <span>ipsum</span></h2>
         </div>
         <div class="text-wrapper">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam blanditiis consequuntur corporis debitis laboriosam, optio quo soluta voluptate. Accusamus commodi cum delectus eius nemo pariatur perferendis quo veritatis, vero?</p>
-        </div>
-        <div class="text-wrapper">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, consectetur consequuntur dolore doloribus eius esse maiores maxime nihil nisi non optio perspiciatis praesentium quas saepe suscipit, tenetur, voluptatem? Consequuntur, odio?</p>
+            <div class="text-wrapper-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam blanditiis consequuntur corporis debitis laboriosam, optio quo soluta voluptate. Accusamus commodi cum delectus eius nemo pariatur perferendis quo veritatis, vero?</p>
+            </div>
+            <div class="text-wrapper-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, consectetur consequuntur dolore doloribus eius esse maiores maxime nihil nisi non optio perspiciatis praesentium quas saepe suscipit, tenetur, voluptatem? Consequuntur, odio?</p>
+            </div>
         </div>
     </div>
 @endsection

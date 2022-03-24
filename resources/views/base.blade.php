@@ -12,41 +12,43 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
-    <title>Sign</title>
+    <title>Curio</title>
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="{{route('home')}}">Sign</a>
+    <nav class="navbar navbar-expand-lg" style="background-color: #03357c;">
+        <div class="container">
+            <a class="navbar-brand" href="{{route('home')}}">
+                <img src="../../img/curio-01-zwart-logo-rgb.png" width="100" height="auto" class="d-inline-block align-top" alt="Foto">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('opdrachten')}}">Opdrachten</a>
+                        <a class="nav-link" href="{{route('opdrachten')}}" style="color: #ffffff;">Opdrachten</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('uitleg')}}">Uitleg</a>
+                        <a class="nav-link" href="{{route('uitleg')}}" style="color: #ffffff; ">Uitleg</a>
                     </li>
 
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
-                            <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                            <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
+                            <li><a class="nav-link" href="{{ route('login') }}" style="color: #ffffff; ">{{ __('Login') }}</a></li>
+                            <li><a class="nav-link" href="{{ route('register') }}" style="color: #ffffff;">{{ __('Register') }}</a></li>
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                    {{ Auth::user()->name }} <span class="caret" style="color: #ffffff;"></span>
                                 </a>
 
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                                    <a class="dropdown-item" href="{{route('dashboard')}}">Dashboard</a>
+                                    <a class="dropdown-item" href="{{route('dashboard')}}"Dashboard</a>
 
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                    <a class="dropdown-item" href="{{ route('logout') }} "
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
@@ -93,13 +95,13 @@
                         Links
                     </h6>
                     <p>
-                        <a href="#!" class="text-reset">Angular</a>
+                        <a href="{{route('home')}}" class="text-reset">Home</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-reset">React</a>
+                        <a href="{{route('opdrachten')}}" class="text-reset">Opdrachten</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-reset">Vue</a>
+                        <a href="{{route('uitleg')}}" class="text-reset">Uitleg</a>
                     </p>
                     <p>
                         <a href="#!" class="text-reset">Laravel</a>
