@@ -151,7 +151,7 @@
 
     <!-- Copyright -->
     <div class="text-center p-4 text-light" style="background-color: #072e62;">
-        © 2021 Copyright:
+        © 2022 Copyright:
         <a class="text-reset fw-bold" href="{{route('home')}}">Sign-opdracht.com</a>
     </div>
     <!-- Copyright -->
