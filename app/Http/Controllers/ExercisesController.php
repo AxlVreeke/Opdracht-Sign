@@ -38,9 +38,9 @@ class ExercisesController extends Controller
     {
         $this->validate($request, [
             'name' => 'required',
-            'job_id' => 'required',
             'description' => 'required',
             'working_method' => 'required',
+            'job_id' => 'required',
             'formit' => 'numeric',
             'number' => 'numeric',
             'file' => 'required'
@@ -48,9 +48,9 @@ class ExercisesController extends Controller
 
         $exercise = new Exercise();
         $exercise->name = $request->name;
-        $exercise->job_id = $request->job_id;
         $exercise->description = $request->description;
         $exercise->working_method = $request->working_method;
+        $exercise->job_id = $request->job_id;
         $exercise->formaat = $request->formaat;
         $exercise->number = $request->number;
         $exercise->file = $request->file;
@@ -97,6 +97,7 @@ class ExercisesController extends Controller
             'name' => 'required',
             'description' => 'required',
             'working_method' => 'required',
+            'job_id' => 'required',
             'formit' => 'numeric',
             'number' => 'numeric',
             'file' => 'required'
@@ -106,6 +107,7 @@ class ExercisesController extends Controller
         $exercise->name = $request->name;
         $exercise->description = $request->description;
         $exercise->working_method = $request->working_method;
+        $exercise->job_id = $request->job_id;
         $exercise->formaat = $request->formaat;
         $exercise->number = $request->number;
         $exercise->file = $request->file;

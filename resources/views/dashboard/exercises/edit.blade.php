@@ -44,16 +44,15 @@
                 <label for="job_id" class="col-sm-2 col-form-label">Klus:</label>
                 <div class="col-sm-10">
                     <select class="form-select" name="job_id" id="job_id">
-                        <option selected>{{$exercise->job->name}}</option>
-                        <option value="1">Raambelettering</option>
-                        <option value="2">Autobelettering</option>
-                        <option value="3">Spandoek</option>
-                        <option value="4">Kledingbedrukking / Caps</option>
-                        <option value="5">Interieurwrap</option>
-                        <option value="6">Vloerstickers</option>
-                        <option value="7">Stickers</option>
-                        <option value="8">Lichtbak</option>
-                        <option value="9">Graveren op Hout / Acrylaat / Glazen</option>
+                        <option value="1" {{$exercise->job->name =="Raambelettering" ? 'selected' : '' }}>Raambelettering</option>
+                        <option value="2" {{$exercise->job->name =="Autobelettering" ? 'selected' : '' }}>Autobelettering</option>
+                        <option value="3" {{$exercise->job->name =="Spandoek" ? 'selected' : '' }}>Spandoek</option>
+                        <option value="4" {{$exercise->job->name =="Kledingbedrukking / Caps" ? 'selected' : '' }}>Kledingbedrukking / Caps</option>
+                        <option value="5" {{$exercise->job->name =="Interieurwrap" ? 'selected' : '' }}>Interieurwrap</option>
+                        <option value="6" {{$exercise->job->name =="Vloerstickers" ? 'selected' : '' }}>Vloerstickers</option>
+                        <option value="7" {{$exercise->job->name =="Stickers" ? 'selected' : '' }}>Stickers</option>
+                        <option value="8" {{$exercise->job->name =="Lichtbak" ? 'selected' : '' }}>Lichtbak</option>
+                        <option value="9" {{$exercise->job->name =="Graveren op Hout / Acrylaat / Glazen" ? 'selected' : '' }}>Graveren op Hout / Acrylaat / Glazen</option>
                     </select>
                 </div>
             </div>
