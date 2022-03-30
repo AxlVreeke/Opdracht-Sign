@@ -27,33 +27,23 @@
     </div>
 
     <div class="input-group mb-3">
-        <label for="customer">Klant:</label>
-        <input type="text" name="customer" id="customer" placeholder="Klant Naam" class="form-control">
-    </div>
-
-    <div class="input-group mb-3">
-        <label for="student">Student:</label>
-        <input type="text" name="student" id="student" placeholder="Student Naam" class="form-control">
-    </div>
-
-    <div class="input-group mb-3">
         <label for="working_method">Werkwijzer:</label>
         <input type="text" name="working_method" id="working_method" placeholder="Werkwijzer" class="form-control">
     </div>
 
     <div class="input-group mb-3">
-        <label for="job">Klus:</label>
-        <select class="form-select" name="job" id="job">
+        <label for="job_id">Klus:</label>
+        <select class="form-select" name="job_id" id="job_id">
             <option selected>Kies...</option>
-            <option value="Raambelettering" name="job" id="job">Raambelettering</option>
-            <option value="Autobelettering" name="job" id="job">Autobelettering</option>
-            <option value="Spandoek" name="job" id="job">Spandoek</option>
-            <option value="Kledingbedrukking / Caps" name="job" id="job">Kledingbedrukking / Caps</option>
-            <option value="Interieurwrap" name="job" id="job">Interieurwrap</option>
-            <option value="Vloerstickers" name="job" id="job">Vloerstickers</option>
-            <option value="Stickers" name="job" id="job">Stickers</option>
-            <option value="Lichtbak" name="job" id="job">Lichtbak</option>
-            <option value="Graveren op Hout / Acrylaat / Glazen" name="job" id="job">Graveren op Hout / Acrylaat / Glazen</option>
+            <option value="1">Raambelettering</option>
+            <option value="2">Autobelettering</option>
+            <option value="3">Spandoek</option>
+            <option value="4">Kledingbedrukking / Caps</option>
+            <option value="5">Interieurwrap</option>
+            <option value="6">Vloerstickers</option>
+            <option value="7">Stickers</option>
+            <option value="8">Lichtbak</option>
+            <option value="9">Graveren op Hout / Acrylaat / Glazen</option>
         </select>
     </div>
 

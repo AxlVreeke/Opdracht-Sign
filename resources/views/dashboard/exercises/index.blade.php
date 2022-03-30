@@ -30,14 +30,16 @@
             <th scope="col">#</th>
             <th scope="col">Naam <></th>
             <th scope="col">Klus <></th>
+            <th scope="col">Opdrachtgever <></th>
         </tr>
         </thead>
         <tbody>
         @foreach($exercises as $exercise)
             <tr>
                 <td>{{ $exercise->id }}</td>
-                <td>{{ $exercise->name }}</td>
-                <td>{{ $exercise->job }}</td>
+                <td class="table-dark"><a href="{{ route('exercises.show', $exercise->id) }}">{{ $exercise->name }}</a></td>
+                <td>{{ $exercise->job->name }}</td>
+                <td>{{ $exercise->user->name }}</td>
             </tr>
         @endforeach
         </tbody>

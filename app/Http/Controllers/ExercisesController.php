@@ -38,11 +38,9 @@ class ExercisesController extends Controller
     {
         $this->validate($request, [
             'name' => 'required',
+            'job_id' => 'required',
             'description' => 'required',
-            'customer' => 'required',
-            'student' => 'required',
             'working_method' => 'required',
-            'job' => 'required',
             'formit' => 'numeric',
             'number' => 'numeric',
             'file' => 'required'
@@ -50,11 +48,9 @@ class ExercisesController extends Controller
 
         $exercise = new Exercise();
         $exercise->name = $request->name;
+        $exercise->job_id = $request->job_id;
         $exercise->description = $request->description;
-        $exercise->customer = $request->customer;
-        $exercise->student = $request->student;
         $exercise->working_method = $request->working_method;
-        $exercise->job = $request->job;
         $exercise->formaat = $request->formaat;
         $exercise->number = $request->number;
         $exercise->file = $request->file;
@@ -100,10 +96,7 @@ class ExercisesController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'description' => 'required',
-            'customer' => 'required',
-            'student' => 'required',
             'working_method' => 'required',
-            'job' => 'required',
             'formit' => 'numeric',
             'number' => 'numeric',
             'file' => 'required'
@@ -112,16 +105,13 @@ class ExercisesController extends Controller
         $exercise = Exercise::findOrFail($id);
         $exercise->name = $request->name;
         $exercise->description = $request->description;
-        $exercise->customer = $request->customer;
-        $exercise->student = $request->student;
         $exercise->working_method = $request->working_method;
-        $exercise->job = $request->job;
         $exercise->formaat = $request->formaat;
         $exercise->number = $request->number;
         $exercise->file = $request->file;
         $exercise->save();
 
-        return back();
+        return redirect()->route('exercises.index');
     }
 
     /**

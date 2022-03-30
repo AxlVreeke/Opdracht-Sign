@@ -15,12 +15,15 @@ class CreateExercisesTable extends Migration
     {
         Schema::create('exercises', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')
+                ->references('id')
+                ->on('users');
+            $table->foreignId('job_id')
+                ->references('id')
+                ->on('jobs');
             $table->string('name');
             $table->string('description');
-            $table->string('customer');
-            $table->string('student');
             $table->string('working_method');
-            $table->string('job');
             $table->decimal('formaat');
             $table->integer('number');
             $table->string('file');

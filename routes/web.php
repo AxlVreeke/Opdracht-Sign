@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ExercisesController;
+use App\Models\Job;
 use Illuminate\Support\Facades\Route;
 
 /*
