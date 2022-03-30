@@ -68,13 +68,24 @@
         <div class="flex-wrapper">
             <h2>Lorem <span>ipsum</span></h2>
         </div>
-        <div class="text-wrapper">
-            <div class="text-wrapper-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam blanditiis consequuntur corporis debitis laboriosam, optio quo soluta voluptate. Accusamus commodi cum delectus eius nemo pariatur perferendis quo veritatis, vero?</p>
+
+        <div class="full-design-left">
+            <div class="icon-wrapper">
+                <div class="design-icon">
+                    <img src="../img/placeholder-icon.svg" alt="Foto">
+                </div>
+                <p>Logo</p>
             </div>
-            <div class="text-wrapper-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, consectetur consequuntur dolore doloribus eius esse maiores maxime nihil nisi non optio perspiciatis praesentium quas saepe suscipit, tenetur, voluptatem? Consequuntur, odio?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ea esse expedita iusto omnis optio pariatur perferendis repudiandae tenetur veritatis. Aspernatur consequatur doloremque, hic quasi repellendus sint tempora tenetur voluptatem!</p>
+        </div>
+        <div class="full-design-right">
+            <div class="icon-wrapper">
+                <div class="design-icon">
+                    <img src="../img/placeholder-icon.svg" alt="Foto">
+                </div>
+                <p>Logo</p>
             </div>
+            <p class="icon-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cupiditate eaque eligendi eos labore sint tempora vero voluptatum? A nihil nulla obcaecati? Eaque eligendi esse est ipsa nostrum, repellendus voluptates.</p>
         </div>
     </div>
 @endsection
