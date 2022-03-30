@@ -2,8 +2,9 @@
 
 @section('content')
 <div class="container">
-    <h1>Maak een opdracht aan!</h1>
-
+    <ul class="ul-title">
+        <li>OPDRACHT AANMAKEN</li>
+    </ul>
     @if ($errors->any())
         <div class="alert alert-danger">
             <ul>
@@ -16,11 +17,16 @@
 
     <form method="post" action="{{route('exercises.store')}}" method="POST">
         @csrf
-    <div class="input-group mb-3" class="input_create_opdr">
-        <label for="name">Opdracht Naam:</label>
-        <input type="text" name="name" id="name" placeholder="Naam Opdracht" class="form-control">
-    </div>
-
+{{--    <div class="input-group mb-3" class="input_create_opdr">--}}
+{{--        <label for="name">Opdracht Naam:</label>--}}
+{{--        <input type="text" name="name" id="name" placeholder="Naam Opdracht" class="form-control">--}}
+{{--    </div>--}}
+        <div class="form-group row">
+            <label for="name" class="col-sm-2 col-form-label">Opdracht Naam:</label>
+            <div class="col-sm-10">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Naam Opdracht" value="">
+            </div>
+        </div>
     <div class="input-group mb-3" class="input_create_opdr">
         <label for="description">Omschrijving:</label>
         <textarea name="description" id="description" cols="30" rows="10"></textarea>
