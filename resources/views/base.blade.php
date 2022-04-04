@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-lg" style="background-color: #03357c;">
         <div class="container">
             <a class="navbar-brand" href="{{route('home')}}">
-                <img src="../../img/curio-01-zwart-logo-rgb.png" width="100" height="auto" class="d-inline-block align-top" alt="Foto">
+                <img src="../../../img/curio-01-zwart-logo-rgb.png" width="100" height="auto" class="d-inline-block align-top" alt="Foto">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
