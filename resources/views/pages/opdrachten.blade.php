@@ -34,7 +34,7 @@
             @foreach($exercises as $exercise)
                 <tr>
                     <td class="table-dark">{{ $exercise->name }}</td>
-                    <td class="table-dark">{{ $exercise->job }}</td>
+                    <td class="table-dark">{{ $exercise->job->name }}</td>
                     <td>69</td>
                     <td>420</td>
                 </tr>
