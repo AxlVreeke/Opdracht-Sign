@@ -151,21 +151,35 @@ header{
 
 /* icon css */
 
+.full-design-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
 .full-design{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.full-design-info{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .full-design-left{
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
 
 .full-design-right{
     display: flex;
     flex-direction: row-reverse;
-
 }
 
 .icon-wrapper{
@@ -176,7 +190,7 @@ header{
     padding: 50px 70px 30px 70px;
     border: solid 1px #c2c2c2;
     margin-right: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     transition: all .3s linear;
 }
 
@@ -185,18 +199,31 @@ header{
     color: #fa329c;
 }
 
-/* .icon-wrapper:hover + p{
+.icon-wrapper:hover + p{
     display: flex;
     transition: all 0s;
-} */
-
-.icon-text{
-    display: none;
 }
 
 .design-icon{
     width: 60px;
     height: 60px;
+}
+
+.home-design-button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.home-design-button a{
+    font-weight: bold;
+    width: 202px;
+}
+
+.home-design-button a:hover{
+    background-color: #beb0ff;
+    border: #69197c 2px solid;
+    margin-bottom: -2px;
 }
 
 /* carousel css */

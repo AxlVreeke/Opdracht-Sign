@@ -68,24 +68,121 @@
         <div class="flex-wrapper">
             <h2>Lorem <span>ipsum</span></h2>
         </div>
-
-        <div class="full-design-left">
-            <div class="icon-wrapper">
-                <div class="design-icon">
-                    <img src="../img/placeholder-icon.svg" alt="Foto">
+        <div class="full-design-wrapper">
+            <div class="full-design">
+                <div class="icon-wrapper">
+                    <div class="design-icon">
+                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                    </div>
+                    <p>Logo</p>
                 </div>
-                <p>Logo</p>
+                <div class="home-design-button">
+                    <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
+                </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ea esse expedita iusto omnis optio pariatur perferendis repudiandae tenetur veritatis. Aspernatur consequatur doloremque, hic quasi repellendus sint tempora tenetur voluptatem!</p>
+            <div class="full-design">
+                <div class="icon-wrapper">
+                    <div class="design-icon">
+                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                    </div>
+                    <p>Logo</p>
+                </div>
+                <div class="home-design-button">
+                    <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
+                </div>
+            </div>
+            <div class="full-design">
+                <div class="icon-wrapper">
+                    <div class="design-icon">
+                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                    </div>
+                    <p>Logo</p>
+                </div>
+                <div class="home-design-button">
+                    <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
+                </div>
+            </div>
+            <div class="full-design">
+                <div class="icon-wrapper">
+                    <div class="design-icon">
+                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                    </div>
+                    <p>Logo</p>
+                </div>
+                <div class="home-design-button">
+                    <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
+                </div>
+            </div>
+            <div class="full-design">
+                <div class="icon-wrapper">
+                    <div class="design-icon">
+                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                    </div>
+                    <p>Logo</p>
+                </div>
+                <div class="home-design-button">
+                    <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
+                </div>
+            </div>
+            <div class="full-design">
+                <div class="icon-wrapper">
+                    <div class="design-icon">
+                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                    </div>
+                    <p>Logo</p>
+                </div>
+                <div class="home-design-button">
+                    <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
+                </div>
+            </div>
+            <div class="full-design">
+                <div class="icon-wrapper">
+                    <div class="design-icon">
+                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                    </div>
+                    <p>Logo</p>
+                </div>
+                <div class="home-design-button">
+                    <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
+                </div>
+            </div>
+            <div class="full-design">
+                <div class="icon-wrapper">
+                    <div class="design-icon">
+                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                    </div>
+                    <p>Logo</p>
+                </div>
+                <div class="home-design-button">
+                    <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
+                </div>
+            </div>
         </div>
-        <div class="full-design-right">
-            <div class="icon-wrapper">
-                <div class="design-icon">
-                    <img src="../img/placeholder-icon.svg" alt="Foto">
+
+        <div class="flex-wrapper">
+            <button onclick="showElement()">Meer info?</button>
+        </div>
+
+        <div id="fullDesign" class="full-design-info">
+            <div class="full-design-left">
+                <div class="icon-wrapper">
+                    <div class="design-icon">
+                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                    </div>
+                    <p>Logo</p>
                 </div>
-                <p>Logo</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ea esse expedita iusto omnis optio pariatur perferendis repudiandae tenetur veritatis. Aspernatur consequatur doloremque, hic quasi repellendus sint tempora tenetur voluptatem!</p>
             </div>
-            <p class="icon-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cupiditate eaque eligendi eos labore sint tempora vero voluptatum? A nihil nulla obcaecati? Eaque eligendi esse est ipsa nostrum, repellendus voluptates.</p>
+            <div class="full-design-right">
+                <div class="icon-wrapper">
+                    <div class="design-icon">
+                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                    </div>
+                    <p>Logo</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cupiditate eaque eligendi eos labore sint tempora vero voluptatum? A nihil nulla obcaecati? Eaque eligendi esse est ipsa nostrum, repellendus voluptates.</p>
+            </div>
         </div>
     </div>
+
 @endsection
