@@ -103,13 +103,19 @@ header{
     padding: 0.3em;
 }
 
+/* main */
+
+main{
+    min-height: 868px;
+}
+
 /* home page css */
 
 .flex-wrapper{
     display: flex;
     justify-content: center;
     padding-top: 50px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .flex-wrapper span{
@@ -175,11 +181,13 @@ header{
 .full-design-left{
     display: flex;
     flex-direction: row;
+    margin-bottom: 10px;
 }
 
 .full-design-right{
     display: flex;
     flex-direction: row-reverse;
+    margin-bottom: 15px;
 }
 
 .icon-wrapper{
@@ -220,10 +228,22 @@ header{
     width: 202px;
 }
 
+.home-design-button button{
+    font-weight: bold;
+    width: 140px;
+    height: 40px;
+}
+
 .home-design-button a:hover{
     background-color: #beb0ff;
     border: #69197c 2px solid;
     margin-bottom: -2px;
+}
+
+.home-design-button button:hover{
+    background-color: #beb0ff;
+    border: #69197c 2px solid;
+
 }
 
 /* carousel css */
@@ -327,11 +347,26 @@ header{
     margin: 0px 20px 50px 20px;
 }
 
-/* main */
+/* detail-pagina */
 
-main{
-    min-height: 858px;
+.show-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
+
+.show-description{
+    display: flex;
+    flex-direction: row;
+}
+
+.show-button-wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 0px 20px;
+}
+
+
 
 /* forms */
 

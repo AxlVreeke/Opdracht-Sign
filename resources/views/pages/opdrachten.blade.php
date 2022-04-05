@@ -19,6 +19,7 @@
                 <option value="8">Lichtbak</option>
                 <option value="9">Graveren op Hout / Acrylaat / Glazen</option>
             </select>
+
         </div>
 {{--        <a class="btn btn-primary" href="{{route('opdrachten_create')}}" role="button">Maak een opdracht!</a>--}}
         <table class="table table-striped">

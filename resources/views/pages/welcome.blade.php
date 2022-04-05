@@ -159,8 +159,8 @@
             </div>
         </div>
 
-        <div class="flex-wrapper">
-            <button onclick="showElement()">Meer info?</button>
+        <div class="home-design-button">
+            <button id="showElement" class="btn btn-secondary navy">Meer info?</button>
         </div>
 
         <div id="fullDesign" class="full-design-info">
@@ -182,7 +182,26 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cupiditate eaque eligendi eos labore sint tempora vero voluptatum? A nihil nulla obcaecati? Eaque eligendi esse est ipsa nostrum, repellendus voluptates.</p>
             </div>
+            <div class="full-design-left">
+                <div class="icon-wrapper">
+                    <div class="design-icon">
+                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                    </div>
+                    <p>Logo</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ea esse expedita iusto omnis optio pariatur perferendis repudiandae tenetur veritatis. Aspernatur consequatur doloremque, hic quasi repellendus sint tempora tenetur voluptatem!</p>
+            </div>
+            <div class="full-design-right">
+                <div class="icon-wrapper">
+                    <div class="design-icon">
+                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                    </div>
+                    <p>Logo</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cupiditate eaque eligendi eos labore sint tempora vero voluptatum? A nihil nulla obcaecati? Eaque eligendi esse est ipsa nostrum, repellendus voluptates.</p>
+            </div>
         </div>
+
     </div>
 
 @endsection
