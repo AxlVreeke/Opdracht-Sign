@@ -22,26 +22,27 @@
 
         </div>
         <a href="{{route('exercises.create')}}" class="btn btn-primary">Nieuw opdracht aanmaken</a>
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th scope="col">Naam <></th>
-                <th scope="col">Klus <></th>
-                <th scope="col">Aantal inzendingen <></th>
-                <th scope="col">Tijd <></th>
-            </tr>
-            </thead>
-            <tbody>
-            @foreach($exercises as $exercise)
+        <div class="exercise-table">
+            <table class="table table-striped">
+                <thead>
                 <tr>
-                    <td class="table-dark">{{ $exercise->name }}</td>
-                    <td class="table-dark">{{ $exercise->job->name }}</td>
-                    <td>69</td>
-                    <td>420</td>
+                    <th scope="col">Naam</th>
+                    <th scope="col">Klus</th>
+                    <th scope="col">Aantal inzendingen</th>
+                    <th scope="col">Tijd</th>
                 </tr>
-            @endforeach
-            </tbody>
-        </table>
-
+                </thead>
+                <tbody>
+                @foreach($exercises as $exercise)
+                    <tr>
+                        <td><span>{{ $exercise->name }}</span><p>{{ $exercise->description }}</p></td>
+                        <td>{{ $exercise->job->name }}</td>
+                        <td>69</td>
+                        <td>420</td>
+                    </tr>
+                @endforeach
+                </tbody>
+            </table>
+        </div>
     </div>
 @endsection

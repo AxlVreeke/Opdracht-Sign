@@ -15,7 +15,7 @@
         </div>
     @endif
 
-    <form method="post" action="{{route('exercises.store')}}" method="POST">
+    <form method="post" action="{{route('exercises.store')}}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group row">
             <label for="name" class="col-sm-2 col-form-label">Opdracht Naam:</label>

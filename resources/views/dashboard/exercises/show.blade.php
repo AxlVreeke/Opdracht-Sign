@@ -10,7 +10,7 @@
                 <p><b>Categorie:</b> {{$exercise->job->name}}</p>
                 <p><b>Formaat:</b> {{$exercise->working_method}}</p>
                 <p><b>Aantal:</b> {{$exercise->number}}</p>
-                <p><b>Bestand:</b> {{$exercise->file}}</p>
+                <p><b>Bestand:</b> <img src="{{asset('storage/user-img/'.$exercise->file)}}" alt="uw foto"></p>
             </div>
             <div class="show-description">
                 <p><b>Beschrijving:</b></p>
