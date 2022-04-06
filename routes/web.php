@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PagesController::class, 'home'])->name('home');
 
 Route::get('/opdrachten', [PagesController::class, 'opdrachten'])->name('opdrachten');
+Route::get('/opdrachten/filter', [\App\Http\Controllers\SearchController::class, 'filterOpdracht'])->name('filter-opdracht');
 
 Route::get('/uitleg', [PagesController::class, 'uitleg'])->name('uitleg');
 
