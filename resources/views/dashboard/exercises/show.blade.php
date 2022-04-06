@@ -2,7 +2,10 @@
 
 @section('content')
     <div class="container">
-        <h2 style="padding-top: 20px; color: #03357c"><b>{{$exercise->name}}</b></h2>
+        <ul class="ul-title">
+            <li style=" color: #000000">{{$exercise->name}}</li>
+        </ul>
+
         <hr>
         <div class="show-wrapper">
             <div class="show-info">

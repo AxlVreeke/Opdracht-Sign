@@ -10,7 +10,14 @@ class SearchController extends Controller
 {
     public function filterOpdracht() {
         $id = request()->get('category');
-        $exercises = Exercise::where('job_id', $id)->get();
-        return view('pages.opdrachten')->with(['exercises' => $exercises]);
+        if ($id == 0){
+            $exercises = Exercise::all();
+            return view('pages.opdrachten')->with(['exercises' => $exercises]);
+        }
+        else{
+            $exercises = Exercise::where('job_id', $id)->get();
+            return view('pages.opdrachten')->with(['exercises' => $exercises]);
+        }
+
     }
 }

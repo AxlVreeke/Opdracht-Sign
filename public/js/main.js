@@ -4,11 +4,13 @@ const showElement = document.getElementById('showElement');
 const fullDesign = document.getElementById('fullDesign');
 
 showElement.addEventListener('click', () => {
-    if (fullDesign.style.display === "none") {
-        fullDesign.style.display = "block";
-    } else {
+    if (fullDesign.style.display === "block") {
         fullDesign.style.display = "none";
+    } else {
+        fullDesign.style.display = "block";
     }
 })
 
-/* sort categories */
+function clearForm() {
+    document.getElementById("report-page-form-form").reset();
+}
