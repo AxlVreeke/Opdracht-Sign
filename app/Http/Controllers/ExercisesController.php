@@ -42,7 +42,7 @@ class ExercisesController extends Controller
             'description' => 'required',
             'working_method' => 'required',
             'job_id' => 'required',
-            'formit' => 'numeric',
+            'formaat' => 'numeric',
             'number' => 'numeric',
             'file' => 'required'
         ]);
@@ -101,7 +101,7 @@ class ExercisesController extends Controller
             'description' => 'required',
             'working_method' => 'required',
             'job_id' => 'required',
-            'formit' => 'numeric',
+            'formaat' => 'numeric',
             'number' => 'numeric',
             'file' => 'required'
         ]);
