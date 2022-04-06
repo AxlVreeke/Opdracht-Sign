@@ -21,7 +21,7 @@
             </select>
 
         </div>
-{{--        <a class="btn btn-primary" href="{{route('opdrachten_create')}}" role="button">Maak een opdracht!</a>--}}
+        <a href="{{route('exercises.create')}}" class="btn btn-primary">Nieuw opdracht aanmaken</a>
         <table class="table table-striped">
             <thead>
             <tr>
