@@ -37,7 +37,7 @@
                 <tbody>
                 @foreach($exercises as $exercise)
                     <tr>
-                        <td><span>{{ $exercise->name }}</span><p>{{ $exercise->description }}</p></td>
+                        <td><span><a href="{{ route('exercises.show', $exercise->id) }}">{{ $exercise->name }}</a</span><p>{{ $exercise->description }}</p></td>
                         <td>{{ $exercise->job->name }}</td>
                         <td>-</td>
                         <td>-</td>

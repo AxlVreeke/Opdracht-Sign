@@ -12,11 +12,11 @@ class SearchController extends Controller
         $id = request()->get('category');
         if ($id == 0){
             $exercises = Exercise::all();
-            return view('pages.opdrachten')->with(['exercises' => $exercises]);
+            return view('pages.exercises.opdrachten')->with(['exercises' => $exercises]);
         }
         else{
             $exercises = Exercise::where('job_id', $id)->get();
-            return view('pages.opdrachten')->with(['exercises' => $exercises]);
+            return view('pages.exercises.opdrachten')->with(['exercises' => $exercises]);
         }
 
     }

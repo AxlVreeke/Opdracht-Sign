@@ -16,7 +16,7 @@ class ExercisesController extends Controller
     public function index()
     {
         $exercises = Exercise::all();
-        return view('dashboard/exercises/index')->with('exercises', $exercises);
+        return view('pages/exercises/opdrachten')->with('exercises', $exercises);
     }
 
     /**
@@ -26,7 +26,7 @@ class ExercisesController extends Controller
      */
     public function create()
     {
-        return view('dashboard/exercises/create');
+        return view('pages/exercises/create');
     }
 
     /**
@@ -71,7 +71,7 @@ class ExercisesController extends Controller
     public function show($id)
     {
         $exercise = Exercise::findOrFail($id);
-        return view('dashboard/exercises/show')->with('exercise', $exercise);
+        return view('pages/exercises/show')->with('exercise', $exercise);
     }
 
     /**
@@ -83,7 +83,7 @@ class ExercisesController extends Controller
     public function edit($id)
     {
         $exercise = Exercise::findOrFail($id);
-        return view('dashboard/exercises/edit')
+        return view('pages/exercises/edit')
             ->with(['exercise' => $exercise]);
     }
 

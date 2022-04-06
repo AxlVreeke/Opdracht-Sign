@@ -15,7 +15,7 @@ class PagesController extends Controller
 
     public function opdrachten() {
         $exercises = Exercise::all();
-        return view('pages/opdrachten')->with('exercises', $exercises);
+        return view('pages/exercises/opdrachten')->with('exercises', $exercises);
     }
 
     public function uitleg() {
