@@ -23,7 +23,7 @@
             <button style="padding: 0px 25px"  type="submit" class="btn btn-secondary navy">Filter</button>
         </div>
         </form>
-        <a href="{{route('exercises.create')}}" class="btn btn-primary">Nieuw opdracht aanmaken</a>
+        <a href="{{route('exercises.create')}}" class="btn btn-primary">Nieuwe opdracht aanmaken</a>
         <div class="exercise-table">
             <table class="table table-striped">
                 <thead>
@@ -37,7 +37,7 @@
                 <tbody>
                 @foreach($exercises as $exercise)
                     <tr>
-                        <td><span><a href="{{ route('exercises.show', $exercise->id) }}">{{ $exercise->name }}</a</span><p>{{ $exercise->description }}</p></td>
+                        <td><span><a href="{{ route('exercises.show', $exercise->id) }}">{{ $exercise->name }}</span></a><p>{{ $exercise->description }}</p></td>
                         <td>{{ $exercise->job->name }}</td>
                         <td>-</td>
                         <td>-</td>

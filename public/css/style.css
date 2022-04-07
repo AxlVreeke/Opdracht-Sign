@@ -351,19 +351,17 @@ main{
 
 .show-wrapper{
     display: flex;
+    flex-direction: row;
+}
 
+.show-title{
+    margin-bottom: 25px;
 }
 
 .show-info{
     display: flex;
     flex-direction: column;
     min-width: 550px;
-}
-
-.show-description{
-    display: flex;
-    justify-content: right;
-    flex-direction: column;
 }
 
 .show-button-wrapper{
