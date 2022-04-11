@@ -22,12 +22,11 @@ Route::get('/opdrachten/filter', [\App\Http\Controllers\SearchController::class,
 
 Route::get('/uitleg', [PagesController::class, 'uitleg'])->name('uitleg');
 
-Route::get('exercises', [ExercisesController::class, 'index'])->name('exercises.index');
+Route::get('/opdrachten', [PagesController::class, 'opdrachten'])->name('opdrachten');
+
 Route::group(['prefix' => 'exercises', 'middleware' => 'auth'], function() {
     Route::resource('exercises', ExercisesController::class);
 });
-
-
 
 Route::get('/dashboard', function () {
     return view('dashboard');
