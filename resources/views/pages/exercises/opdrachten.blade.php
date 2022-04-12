@@ -2,9 +2,7 @@
 
 @section('content')
     <div class="container">
-        <ul class="ul-title">
-            <li>OPDRACHTEN</li>
-        </ul>
+        <div class="main-title">OPDRACHTEN</div>
         <form id="report-page-form-form" action="{{route('filter-opdracht')}}">
         <div class="input-group mb-3">
             <label class="input-group-text" for="inputGroupSelect01">Categorie:</label>
@@ -23,7 +21,7 @@
             <button style="padding: 0px 25px"  type="submit" class="btn btn-secondary navy">Filter</button>
         </div>
         </form>
-        <a href="{{route('exercises.create')}}" class="btn btn-primary">Nieuwe opdracht aanmaken</a>
+        <a style="margin-bottom: 20px" href="{{route('exercises.create')}}" class="btn btn-primary">Nieuwe opdracht aanmaken</a>
         <div class="exercise-table">
             <table class="table table-striped">
                 <thead>

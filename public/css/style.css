@@ -94,7 +94,6 @@ body{
 
 header{
     box-shadow: gray 1px 2px 3px;
-
 }
 
 #navbarNav {
@@ -103,10 +102,26 @@ header{
     padding: 0.3em;
 }
 
+li.nav-item  a.nav-link{
+    color: #ffffff;
+}
+
+li.nav-item a.nav-link:hover {
+    color: #ffcc00;
+}
+
 /* main */
 
 main{
     min-height: 868px;
+}
+
+.main-title {
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0px 15px 0px;
 }
 
 /* home page css */
@@ -354,14 +369,50 @@ main{
     flex-direction: row;
 }
 
-.show-title{
-    margin-bottom: 25px;
+.show-title h4{
+    border-bottom: 2px solid black;
+    padding-bottom: 12px;
+    margin-bottom: 13px;
+    width: 280px;
 }
 
 .show-info{
     display: flex;
     flex-direction: column;
-    min-width: 550px;
+    margin-right: 20px;
+    min-width: 530px;
+    border-right: solid 1px #c9c9c9;
+    position: relative;
+}
+
+.show-info span{
+    position: absolute;
+    left: 180px;
+}
+
+.show-description h4{
+    margin-bottom: 13px;
+    border-bottom: 2px solid black;
+    padding-bottom: 12px;
+    width: 280px;
+}
+
+.show-info-button{
+    display: flex;
+    justify-content: center;
+}
+
+.show-info-button .btn-secondary{
+    margin-top: 20px;
+    padding: 5px 35px;
+    background: rgb(9,133,208);
+    background: linear-gradient(180deg, rgba(9,133,208,1) 29%, rgba(90,73,221,1) 100%);
+    border: 0;
+}
+
+.show-info-button .btn-secondary:hover{
+    background: rgb(10,110,166);
+    background: linear-gradient(180deg, rgba(10,110,166,1) 29%, rgba(87,76,170,1) 100%);
 }
 
 .show-button-wrapper{

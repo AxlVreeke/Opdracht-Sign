@@ -2,8 +2,9 @@
 
 @section('content')
     <div class="container">
-        <div class="main-title">{{$exercise->name}}</div>
-        <hr>
+        <ul class="ul-title">
+            <li>OPDRACHT AANPASSEN</li>
+        </ul>
 
         @if ($errors->any())
             <div class="alert alert-danger">

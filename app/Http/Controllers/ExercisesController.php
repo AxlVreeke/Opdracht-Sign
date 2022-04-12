@@ -80,6 +80,19 @@ class ExercisesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    public function participate($id)
+    {
+        $exercise = Exercise::findOrFail($id);
+        return view('pages/exercises/participate')
+            ->with(['exercise' => $exercise]);
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
     public function edit($id)
     {
         $exercise = Exercise::findOrFail($id);

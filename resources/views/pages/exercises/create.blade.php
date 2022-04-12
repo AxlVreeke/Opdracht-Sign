@@ -2,9 +2,8 @@
 
 @section('content')
 <div class="container">
-    <ul class="ul-title">
-        <li>OPDRACHT AANMAKEN</li>
-    </ul>
+    <div class="main-title">OPDRACHT AANMAKEN</div>
+    <hr>
     @if ($errors->any())
         <div class="alert alert-danger">
             <ul>

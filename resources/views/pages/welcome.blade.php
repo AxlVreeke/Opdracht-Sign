@@ -58,8 +58,8 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi architecto assumenda commodi consequuntur delectus dignissimos eius eos est, facere illo itaque laborum, magnam maiores, molestiae nostrum numquam tenetur velit.</p>
                     </div>
                 </div>
-                <div class="explanation-button">
-                    <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
+                <div class="show-info-button">
+                    <a class="btn btn-secondary" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
                 </div>
             </div>
         </div>
