@@ -116,6 +116,10 @@ main{
     min-height: 868px;
 }
 
+hr{
+    margin-bottom: 21px;
+}
+
 .main-title {
     color: #000000;
     text-transform: uppercase;
@@ -390,13 +394,6 @@ main{
     left: 180px;
 }
 
-.show-description h4{
-    margin-bottom: 13px;
-    border-bottom: 2px solid black;
-    padding-bottom: 12px;
-    width: 280px;
-}
-
 .show-info-button{
     display: flex;
     justify-content: center;
@@ -418,7 +415,7 @@ main{
 .show-button-wrapper{
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .show-button{

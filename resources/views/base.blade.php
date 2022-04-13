@@ -70,7 +70,7 @@
     @yield('content')
 </main>
 <!-- Footer -->
-<footer class="text-center text-lg-start text-muted" style="background-color: @if(isset($color)){{$color}} @else #03357c @endif; padding-top: 1px; border-top: solid 1px black">
+<footer class="text-center text-lg-start text-muted" style="background-color: @if(isset($color)){{$color}} @else #03357c @endif; padding-top: 1px; margin-top: 35px; border-top: solid 1px black">
     <!-- Section: Links  -->
     <section class="">
         <div class="container text-center text-md-start mt-5">
