@@ -26,6 +26,7 @@ Route::get('/opdrachten', [PagesController::class, 'opdrachten'])->name('opdrach
 
 Route::group(['prefix' => 'exercises', 'middleware' => 'auth'], function() {
     Route::resource('exercises', ExercisesController::class);
+    Route::get('/participate', [ExercisesController::class, 'participate'])->name('participate');
 });
 
 Route::get('/dashboard', function () {

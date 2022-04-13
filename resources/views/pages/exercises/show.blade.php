@@ -15,7 +15,7 @@
                 <p><b>Aantal:</b><span>{{$exercise->number}}</p></span>
                 <p><b>Bestand:</b><span> <img src="{{asset('storage/user-img/'.$exercise->file)}}" alt="uw foto"></p></span>
                 <div class="show-info-button">
-                    <a class="btn btn-secondary" href="{{route('exercises.edit', $exercise->id)}}" role="button">Neem deel</a>
+                    <a class="btn btn-secondary" href="{{route('participate', $exercise->id)}}" role="button">Neem deel</a>
                 </div>
             </div>
             <div class="show-description">
