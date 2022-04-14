@@ -18,9 +18,9 @@
             @csrf
 
             <div class="form-group row">
-                <label for="description" class="col-sm-2 col-form-label">Beschrijving:</label>
+                <label for="information" class="col-sm-2 col-form-label">Informatie:</label>
                 <div class="col-sm-10">
-                    <textarea name="description" class="form-control" id="description" placeholder="vul hier de beschrijving in" cols="30" rows="10"></textarea>
+                    <textarea name="description" class="form-control" id="description" placeholder="vul hier informatie in" cols="30" rows="10"></textarea>
                 </div>
             </div>
             <div class="form-group row">

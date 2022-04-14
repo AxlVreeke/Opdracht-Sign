@@ -28,7 +28,7 @@
                 <tr>
                     <th scope="col">Naam</th>
                     <th scope="col">Klus</th>
-                    <th scope="col">Aantal inzendingen</th>
+                    <th style="min-width: 200px" scope="col">Aantal inzendingen</th>
                     <th scope="col">Tijd</th>
                 </tr>
                 </thead>

@@ -14,7 +14,6 @@
                 <p><b>Formaat:</b><span>{{$exercise->working_method}}</p></span>
                 <p><b>Aantal:</b><span>{{$exercise->number}}</p></span>
 
-
                 <div class="show-info-button">
                     <a class="btn btn-secondary" href="{{route('exercises.participate', $exercise->id)}}" role="button">Neem deel</a>
                 </div>
