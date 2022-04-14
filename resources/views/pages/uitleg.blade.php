@@ -26,9 +26,7 @@
 {{--                    <p class="card-text">cool</p>--}}
 {{--                </div>--}}
 {{--            </div>--}}
-            <ul class="ul-title darkpurple-color">
-                <li>UITLEG</li>
-            </ul>
+            <div class="main-title">UITLEG</div>
             <div class="explanation-content">
                 <h2>Start uw eigen schoolproject</h2>
                 <h3>Het duurt slechts enkele minuten!</h3>

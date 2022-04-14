@@ -15,7 +15,7 @@
             </div>
         @endif
 
-        <form method="post" action="{{route('exercises.update', $exercise->id)}}">
+        <form method="post" action="{{route('exercises.update', $exercise->id)}}" enctype="multipart/form-data">>
             @csrf
             @method("PUT")
             <div class="form-group row">
