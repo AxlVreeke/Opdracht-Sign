@@ -118,6 +118,7 @@ class ExercisesController extends Controller
             'number' => 'numeric',
             'file' => 'required'
         ]);
+        $file = $request->file('file')->store('public/user-img');
 
         $exercise = Exercise::findOrFail($id);
         $exercise->name = $request->name;
@@ -126,7 +127,7 @@ class ExercisesController extends Controller
         $exercise->job_id = $request->job_id;
         $exercise->formaat = $request->formaat;
         $exercise->number = $request->number;
-        $exercise->file = $request->file;
+        $exercise->file = str_replace('public/user-img/', '', $file);
         $exercise->save();
 
         return redirect()->route('exercises.index');
