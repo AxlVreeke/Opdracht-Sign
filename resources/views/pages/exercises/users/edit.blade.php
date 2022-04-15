@@ -15,7 +15,7 @@
             </div>
         @endif
 
-        <form method="post" action="{{route('exercises.update', $exercise->id)}}">
+        <form method="post" action="{{route('exercise.update', $exercise->id)}}">
             @csrf
             @method("PUT")
             <div class="form-group row">

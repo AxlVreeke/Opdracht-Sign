@@ -46,7 +46,11 @@
 
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                                    <a class="dropdown-item" href="{{route('dashboard')}}">Dashboard</a>
+                                    <a class="dropdown-item" href="{{ route('exercise.index') }}">Profiel</a>
+
+                                    @role('admin')
+                                    <a class="dropdown-item" href="{{ route('dashboard') }}">Dashboard</a>
+                                    @endrole
 
                                     <a class="dropdown-item" href="{{ route('logout') }} "
                                        onclick="event.preventDefault();
