@@ -20,7 +20,8 @@
             <div class="form-group row">
                 <label for="information" class="col-sm-2 col-form-label">Informatie:</label>
                 <div class="col-sm-10">
-                    <textarea name="description" class="form-control" id="description" placeholder="vul hier informatie in" cols="30" rows="10"></textarea>
+                    <textarea name="description" class="form-control" id="description" maxlength="255" placeholder="vul hier informatie in" cols="30" rows="10"></textarea>
+                    <div id="count" class="char-amount">255</div>
                 </div>
             </div>
             <div class="form-group row">
@@ -35,4 +36,5 @@
             </div>
         </form>
     </div>
+    <script src="../../js/char-countdown.js"></script>
 @endsection

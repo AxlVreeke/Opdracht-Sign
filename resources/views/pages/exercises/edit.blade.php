@@ -28,7 +28,8 @@
             <div class="form-group row">
                 <label for="description" class="col-sm-2 col-form-label">Beschrijving:</label>
                 <div class="col-sm-10">
-                    <textarea name="description" class="form-control" id="description" cols="30" rows="10">{{$exercise->description}}</textarea>
+                    <textarea name="description" class="form-control" id="description" maxlength="255" cols="30" rows="10">{{$exercise->description}}</textarea>
+                    <div id="count" class="char-amount"></div>
                 </div>
             </div>
 
@@ -83,4 +84,5 @@
             </div>
         </form>
     </div>
+    <script src="../../../js/char-countdown.js"></script>
 @endsection
