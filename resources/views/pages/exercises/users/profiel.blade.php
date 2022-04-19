@@ -5,11 +5,11 @@
         <div class="main-title">MIJN OPDRACHTEN</div>
         <div class="exercise-table">
             <table class="table table-striped">
-                <thead>
+                <thead style="background-color: #78034a">
                 <tr>
                     <th scope="col">Naam</th>
                     <th scope="col">Klus</th>
-                    <th scope="col">Aantal inzendingen</th>
+                    <th style="min-width: 200px" scope="col">Aantal inzendingen</th>
                     <th scope="col">Tijd</th>
                 </tr>
                 </thead>
