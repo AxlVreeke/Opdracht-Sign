@@ -14,3 +14,4 @@ showElement.addEventListener('click', () => {
 function clearForm() {
     document.getElementById("report-page-form-form").reset();
 }
+

@@ -19,21 +19,22 @@
         <div class="form-group row">
             <label for="name" class="col-sm-2 col-form-label">Opdracht Naam:</label>
             <div class="col-sm-10">
-                <input type="text" name="name" class="form-control" id="name" placeholder="vul hier de opdracht naam in" value="">
+                <input type="text" name="name" class="form-control" id="name" maxlength="255" placeholder="vul hier de opdracht naam in" value="">
             </div>
         </div>
 
         <div class="form-group row">
             <label for="description" class="col-sm-2 col-form-label">Beschrijving:</label>
             <div class="col-sm-10">
-                <textarea name="description" class="form-control" id="description" placeholder="vul hier de beschrijving in" cols="30" rows="10"></textarea>
+                <textarea name="description" class="form-control" id="description" maxlength="255" placeholder="vul hier de beschrijving in" cols="30" rows="10"></textarea>
+                <div id="count" class="char-amount">255</div>
             </div>
         </div>
 
         <div class="form-group row">
             <label for="working_method" class="col-sm-2 col-form-label">Werkwijzer:</label>
             <div class="col-sm-10">
-                <input type="text" name="working_method" class="form-control" id="working_method" placeholder="vul hier de werkwijzer in" value="">
+                <input type="text" name="working_method" class="form-control" id="working_method" maxlength="255" placeholder="vul hier de werkwijzer in" value="">
             </div>
         </div>
 
@@ -81,4 +82,5 @@
         </div>
     </form>
 </div>
+<script src="../../js/char-countdown.js"></script>
 @endsection

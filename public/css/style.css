@@ -439,6 +439,13 @@ hr{
     text-transform: uppercase;
 }
 
+.char-amount{
+    position: absolute;
+    bottom: 4px;
+    right: 25px;
+    color: #727070;
+}
+
 
 /* forms */
 
