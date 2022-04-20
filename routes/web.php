@@ -33,7 +33,7 @@ Route::get('/opdrachten', [PagesController::class, 'opdrachten'])->name('opdrach
 
 Route::group(['prefix' => 'exercises', 'middleware' => 'auth'], function() {
     Route::resource('exercises', ExercisesController::class);
-    Route::get('participate/{id}', [ExercisesController::class, 'participate'])->name('exercises.participate');
+    Route::post('addparticipate', [\App\Http\Controllers\ParticipateController::class, 'store'])->name('participate.store');
     Route::resource('exercise', ExerciseController::class);
 });
 

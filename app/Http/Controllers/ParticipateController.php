@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Participate;
 use Illuminate\Http\Request;
 
 class ParticipateController extends Controller
@@ -34,7 +35,15 @@ class ParticipateController extends Controller
      */
     public function store(Request $request)
     {
+        $exercise_id = $request->exercise_id;
+        $user_id = $request->user_id;
 
+        Participate::create([
+            'user_id' => $user_id,
+            'exercise_id' => $exercise_id
+        ]);
+
+        return back();
     }
 
     /**

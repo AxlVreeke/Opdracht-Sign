@@ -15,7 +15,16 @@
                 <p><b>Aantal:</b><span>{{$exercise->number}}</p></span>
 
                 <div class="show-info-button">
-                    <a class="btn btn-secondary" href="{{route('exercises.participate', $exercise->id)}}" role="button">Neem deel</a>
+                    @if(auth()->user()->assignedToExercise($exercise->id))
+                        <p>Al ingeschreven op deze opdracht.</p>
+                    @else
+                        <form action={{route('participate.store')}} method="POST">
+                            @csrf
+                            <input type="hidden" name="exercise_id" value="{{$exercise->id}}">
+                            <input type="hidden" name="user_id" value="{{Auth::id()}}">
+                            <input type="submit" value="inschrijven">
+                        </form>
+                    @endif
                 </div>
             </div>
             <div class="show-title">

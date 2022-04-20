@@ -48,4 +48,16 @@ class User extends Authenticatable
         return $this->HasMany(Exercise::class);
         $exercises = auth()->user()->exercises()->orderBy('created_at', 'desc')->paginate(6);
     }
+
+    public function participations() {
+        return $this->hasMany(Participate::class);
+    }
+
+    public function assignedToExercise($exercise_id) {
+        $participation = Participate::where('user_id', auth()->user()->id)->where('exercise_id', $exercise_id)->first();
+        if ($participation) {
+            return true;
+        }
+        return false;
+    }
 }
