@@ -33,13 +33,14 @@ Route::get('/opdrachten', [PagesController::class, 'opdrachten'])->name('opdrach
 
 Route::group(['prefix' => 'exercises', 'middleware' => 'auth'], function() {
     Route::resource('exercises', ExercisesController::class);
+    Route::get('participate/{id}', [ExercisesController::class, 'participate'])->name('exercises.participate');
     Route::post('addparticipate', [\App\Http\Controllers\ParticipateController::class, 'store'])->name('participate.store');
     Route::resource('exercise', ExerciseController::class);
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'role:admin'])->name('dashboard');
+    return view('admin.index');
+})->middleware(['auth', 'role:admin'])->name('admin');
 
 Route::middleware(['auth', 'role:admin'])->name('admin.')->prefix('admin')->group(function () {
     Route::get('/', [IndexController::class, 'index'])->name('index');

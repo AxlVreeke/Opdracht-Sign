@@ -14,18 +14,21 @@
                 <p><b>Formaat:</b><span>{{$exercise->working_method}}</p></span>
                 <p><b>Aantal:</b><span>{{$exercise->number}}</p></span>
 
-                <div class="show-info-button">
-                    @if(auth()->user()->assignedToExercise($exercise->id))
-                        <p>Al ingeschreven op deze opdracht.</p>
-                    @else
-                        <form action={{route('participate.store')}} method="POST">
+                @if(auth()->user()->assignedToExercise($exercise->id))
+                    <p>Al ingeschreven op deze opdracht.</p>
+                <div class="show-info-button-wrapper">
+                    <a class="btn show-info-button" href="{{route('exercises.participate', $exercise->id)}}" role="button">Neem deel</a>
+                </div>
+                @else
+                    <div class="show-info-button-wrapper">
+                        <form  action={{route('participate.store')}} method="POST">
                             @csrf
                             <input type="hidden" name="exercise_id" value="{{$exercise->id}}">
                             <input type="hidden" name="user_id" value="{{Auth::id()}}">
-                            <input type="submit" value="inschrijven">
+                            <input class="btn show-info-button" type="submit" value="inschrijven">
                         </form>
-                    @endif
-                </div>
+                    </div>
+                @endif
             </div>
             <div class="show-title">
                 <h4><b>Beschrijving:</b></h4>

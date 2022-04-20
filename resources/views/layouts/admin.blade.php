@@ -79,8 +79,6 @@
                           :active="request()->routeIs('admin.permissions.index')">Permissions</x-admin-link>
             <x-admin-link :href="route('admin.users.index')" :active="request()->routeIs('admin.users.index')">Users
             </x-admin-link>
-            <x-admin-link :href="route('dashboard')"
-                          :active="request()->routeIs('dashboard')">Site Dashboard</x-admin-link>
             <x-admin-link :href="route('home')"
                           :active="request()->routeIs('home')">Website</x-admin-link>
             <div @click.away="open = false" class="relative" x-data="{ open: false }">

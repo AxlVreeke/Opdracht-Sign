@@ -394,23 +394,30 @@ hr{
     left: 180px;
 }
 
-.show-info-button{
+.show-info-button-wrapper{
     display: flex;
     justify-content: center;
 }
 
-.show-info-button .btn-secondary{
+.show-info-button-wrapper .show-info-button{
     margin-top: 20px;
     padding: 5px 35px;
     background: rgb(9,133,208);
     background: linear-gradient(180deg, rgba(9,133,208,1) 29%, rgba(90,73,221,1) 100%);
+    color: #ffffff;
     border: 0;
 }
 
-.show-info-button .btn-secondary:hover{
+.show-info-button-wrapper .show-info-button:hover{
     background: rgb(10,110,166);
     background: linear-gradient(180deg, rgba(10,110,166,1) 29%, rgba(87,76,170,1) 100%);
 }
+
+.show-info-button-wrapper .show-info-button:focus{
+    background-color: #0A6EA6FF;
+    color: white;
+}
+
 
 .show-button-wrapper{
     display: flex;
