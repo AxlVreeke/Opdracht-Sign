@@ -14,12 +14,14 @@
                 <p><b>Formaat:</b><span>{{$exercise->working_method}}</p></span>
                 <p><b>Aantal:</b><span>{{$exercise->number}}</p></span>
 
+
                 @if(auth()->user()->assignedToExercise($exercise->id))
-                    <p>Al ingeschreven op deze opdracht.</p>
+                    <p><b>Inschrijving:</b><span>Je bent ingeschreven</p></span>
                 <div class="show-info-button-wrapper">
                     <a class="btn show-info-button" href="{{route('exercises.participate', $exercise->id)}}" role="button">Neem deel</a>
                 </div>
                 @else
+                    <p><b>Inschrijving:</b><span>Niet Ingeschreven</p></span>
                     <div class="show-info-button-wrapper">
                         <form  action={{route('participate.store')}} method="POST">
                             @csrf
@@ -39,7 +41,7 @@
 
         <div style="margin-top: 30px" class="show-title">
             <h4><b>Bestand:</b></h4>
-            <span> <img style="width: 400px; height: auto; margin-top: 10px;" src="{{asset('storage/user-img/'.$exercise->file)}}" width="70px" height="70px" alt="Uw foto"></span>
+            <span> <img style="width: 400px; max-height: 800px; height: auto; margin-top: 10px;" src="{{asset('storage/user-img/'.$exercise->file)}}" width="70px" height="70px" alt="Uw foto"></span>
         </div>
     </div>
     @role('admin')

@@ -37,8 +37,10 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
-                            <li><a class="nav-link" href="{{ route('login') }}" style="color: #ffffff; ">{{ __('Login') }}</a></li>
-                            <li><a class="nav-link" href="{{ route('register') }}" style="color: #ffffff;">{{ __('Register') }}</a></li>
+                            <div class="guest-styling">
+                                <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
+                                <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
+                            </div>
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

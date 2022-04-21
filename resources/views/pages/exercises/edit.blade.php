@@ -75,7 +75,7 @@
                 <label for="file" class="col-sm-2 col-form-label">Upload bestand:</label>
                 <div class="col-sm-10">
                     <input type="file" name="file" class="form-control" id="file">
-                    <img style="width: 250px; height: auto; margin-top: 10px;" src="{{asset('storage/user-img/'.$exercise->file)}}" alt="Uw foto">
+                    <img style="width: 400px; max-height: 800px; height: auto; margin-top: 10px;" src="{{asset('storage/user-img/'.$exercise->file)}}" alt="Uw foto">
                 </div>
             </div>
 

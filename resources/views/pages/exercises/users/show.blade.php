@@ -21,10 +21,9 @@
             </div>
         </div>
 
-
         <div style="margin-top: 30px" class="show-title">
             <h4><b>Bestand:</b></h4>
-            <span> <img style="width: 400px; height: auto; margin-top: 10px;" src="{{asset('storage/user-img/'.$exercise->file)}}" alt="Uw foto"></span>
+            <span> <img style="width: 400px; max-height: 800px; height: auto; margin-top: 10px;" src="{{asset('storage/user-img/'.$exercise->file)}}" alt="Uw foto"></span>
         </div>
     </div>
     <div class="show-button-wrapper">

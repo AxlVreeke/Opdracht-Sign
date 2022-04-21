@@ -102,6 +102,22 @@ header{
     padding: 0.3em;
 }
 
+.guest-styling{
+    display: flex;
+}
+
+.guest-styling a{
+    color: #ffffff;
+}
+
+.guest-styling a:hover{
+    color: #ffcc00;
+}
+
+.guest-styling a:focus{
+    color: #ffcc00;
+}
+
 li.nav-item  a.nav-link{
     color: #ffffff;
 }
@@ -408,16 +424,13 @@ hr{
     border: 0;
 }
 
-.show-info-button-wrapper .show-info-button:hover{
+.show-info-button-wrapper .show-info-button:hover,
+.show-info-button-wrapper .show-info-button:focus,
+.show-info-button-wrapper .show-info-button:hover:active,
+.show-info-button-wrapper .show-info-button:active{
     background: rgb(10,110,166);
     background: linear-gradient(180deg, rgba(10,110,166,1) 29%, rgba(87,76,170,1) 100%);
 }
-
-.show-info-button-wrapper .show-info-button:focus{
-    background-color: #0A6EA6FF;
-    color: white;
-}
-
 
 .show-button-wrapper{
     display: flex;
