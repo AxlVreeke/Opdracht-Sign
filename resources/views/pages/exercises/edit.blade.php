@@ -34,13 +34,6 @@
             </div>
 
             <div class="form-group row">
-                <label for="working_method" class="col-sm-2 col-form-label">Werkwijzer:</label>
-                <div class="col-sm-10">
-                    <input type="text" name="working_method" class="form-control" id="working_method" value="{{$exercise->working_method}}">
-                </div>
-            </div>
-
-            <div class="form-group row">
                 <label for="job_id" class="col-sm-2 col-form-label">Klus:</label>
                 <div class="col-sm-10">
                     <select class="form-select" name="job_id" id="job_id">
@@ -58,16 +51,23 @@
             </div>
 
             <div class="form-group row">
-                <label for="formaat" class="col-sm-2 col-form-label">Formaat:</label>
+                <label for="number" class="col-sm-2 col-form-label">Aantallen:</label>
                 <div class="col-sm-10">
-                    <input type="number" name="formaat" class="form-control" id="working_method" value="{{$exercise->formaat}}">
+                    <input type="number" name="number" class="form-control" id="number" value="{{$exercise->number}}">
                 </div>
             </div>
 
             <div class="form-group row">
-                <label for="number" class="col-sm-2 col-form-label">Aantallen:</label>
+                <label for="others" class="col-sm-2 col-form-label">Anders:</label>
                 <div class="col-sm-10">
-                    <input type="number" name="number" class="form-control" id="number" value="{{$exercise->number}}">
+                    <input type="text" name="others" class="form-control" id="others" maxlength="255" placeholder="" value="{{$exercise->others}}">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="end_date" class="col-sm-2 col-form-label">Deadline:</label>
+                <div class="col-sm-10">
+                    <input type="date" name="end_date" class="form-control" id="end_date" maxlength="255" placeholder="" value="{{$exercise->end_date}}">
                 </div>
             </div>
 

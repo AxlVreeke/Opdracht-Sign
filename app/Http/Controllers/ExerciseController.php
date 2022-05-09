@@ -58,10 +58,9 @@ class ExerciseController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'description' => 'required',
-            'working_method' => 'required',
             'job_id' => 'required',
-            'formaat' => 'numeric',
             'number' => 'numeric',
+            'end_date' => 'required',
             'file' => 'required'
         ]);
         $file = $request->file('file')->store('public/user-img');
@@ -69,10 +68,10 @@ class ExerciseController extends Controller
         $exercise = Exercise::findOrFail($id);
         $exercise->name = $request->name;
         $exercise->description = $request->description;
-        $exercise->working_method = $request->working_method;
         $exercise->job_id = $request->job_id;
-        $exercise->formaat = $request->formaat;
         $exercise->number = $request->number;
+        $exercise->others = $request->others;
+        $exercise->end_date = $request->end_date;
         $exercise->file = str_replace('public/user-img/', '', $file);
         $exercise->save();
 

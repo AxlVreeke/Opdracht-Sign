@@ -23,9 +23,10 @@ class CreateExercisesTable extends Migration
                 ->on('jobs');
             $table->string('name');
             $table->string('description');
-            $table->string('working_method');
-            $table->decimal('formaat');
             $table->integer('number');
+            $table->string('others');
+            $table->integer('entries')->default(0);
+            $table->date('end_date');
             $table->string('file');
             $table->timestamps();
         });
