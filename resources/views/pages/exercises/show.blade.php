@@ -11,7 +11,6 @@
                 </div>
                 <p><b>Opdrachtgever:</b><span>{{$exercise->user->name}}</p></span>
                 <p><b>Categorie:</b><span>{{$exercise->job->name}}</p></span>
-                <p><b>Formaat:</b><span>{{$exercise->working_method}}</p></span>
                 <p><b>Aantal:</b><span>{{$exercise->number}}</p></span>
 
 
