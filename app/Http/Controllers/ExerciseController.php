@@ -70,7 +70,6 @@ class ExerciseController extends Controller
         $exercise->description = $request->description;
         $exercise->job_id = $request->job_id;
         $exercise->number = $request->number;
-        $exercise->others = $request->others;
         $exercise->end_date = $request->end_date;
         $exercise->file = str_replace('public/user-img/', '', $file);
         $exercise->save();

@@ -24,7 +24,6 @@ class CreateExercisesTable extends Migration
             $table->string('name');
             $table->string('description');
             $table->integer('number');
-            $table->string('others');
             $table->integer('entries')->default(0);
             $table->date('end_date');
             $table->string('file');

@@ -49,5 +49,9 @@ class JobSeeder extends Seeder
         $job = new Job();
         $job->name = 'Graveren op Hout / Acrylaat / Glazen';
         $job->save();
+
+        $job = new Job();
+        $job->name = 'Anders';
+        $job->save();
     }
 }
