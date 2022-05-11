@@ -46,6 +46,7 @@
                         <option value="7" {{$exercise->job->name =="Stickers" ? 'selected' : '' }}>Stickers</option>
                         <option value="8" {{$exercise->job->name =="Lichtbak" ? 'selected' : '' }}>Lichtbak</option>
                         <option value="9" {{$exercise->job->name =="Graveren op Hout / Acrylaat / Glazen" ? 'selected' : '' }}>Graveren op Hout / Acrylaat / Glazen</option>
+                        <option value="10" {{$exercise->job->name =="Anders" ? 'selected' : '' }}>Anders</option>
                     </select>
                 </div>
             </div>
@@ -54,13 +55,6 @@
                 <label for="number" class="col-sm-2 col-form-label">Aantallen:</label>
                 <div class="col-sm-10">
                     <input type="number" name="number" class="form-control" id="number" value="{{$exercise->number}}">
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <label for="others" class="col-sm-2 col-form-label">Anders:</label>
-                <div class="col-sm-10">
-                    <input type="text" name="others" class="form-control" id="others" maxlength="255" placeholder="" value="{{$exercise->others}}">
                 </div>
             </div>
 

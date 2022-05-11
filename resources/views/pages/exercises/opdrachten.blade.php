@@ -17,6 +17,7 @@
                 <option value="7">Stickers</option>
                 <option value="8">Lichtbak</option>
                 <option value="9">Graveren op Hout / Acrylaat / Glazen</option>
+                <option value="9">Anders</option>
             </select>
             <button style="padding: 0px 25px"  type="submit" class="btn btn-secondary navy">Filter</button>
         </div>
@@ -29,7 +30,7 @@
                     <th scope="col">Naam</th>
                     <th scope="col">Klus</th>
                     <th style="min-width: 200px" scope="col">Aantal inzendingen</th>
-                    <th scope="col">Tijd</th>
+                    <th scope="col">Eind Datum</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -37,8 +38,8 @@
                     <tr>
                         <td><span><a href="{{ route('exercises.show', $exercise->id) }}">{{ $exercise->name }}</span></a><p>{{ $exercise->description }}</p></td>
                         <td>{{ $exercise->job->name }}</td>
-                        <td>-</td>
-                        <td>-</td>
+                        <td>{{ $exercise->entries }}</td>
+                        <td>{{ $exercise->end_date }}</td>
                     </tr>
                 @endforeach
                 </tbody>
