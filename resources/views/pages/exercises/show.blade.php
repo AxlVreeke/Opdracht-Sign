@@ -13,22 +13,25 @@
                 <p><b>Categorie:</b><span>{{$exercise->job->name}}</p></span>
                 <p><b>Aantal:</b><span>{{$exercise->number}}</p></span>
 
-
                 @if(auth()->user()->assignedToExercise($exercise->id))
                     <p><b>Inschrijving:</b><span>Je bent ingeschreven</p></span>
-                <div class="show-info-button-wrapper">
-                    <a class="btn show-info-button" href="{{route('exercises.participate', $exercise->id)}}" role="button">Neem deel</a>
-                </div>
-                @else
-                    <p><b>Inschrijving:</b><span>Niet Ingeschreven</p></span>
                     <div class="show-info-button-wrapper">
-                        <form  action={{route('participate.store')}} method="POST">
-                            @csrf
-                            <input type="hidden" name="exercise_id" value="{{$exercise->id}}">
-                            <input type="hidden" name="user_id" value="{{Auth::id()}}">
-                            <input class="btn show-info-button" type="submit" value="inschrijven">
-                        </form>
+                        <a class="btn show-info-button" href="{{route('exercises.participate', $exercise->id)}}" role="button">Neem deel</a>
                     </div>
+                @else
+                    @if(auth()->user() == ($exercise->user))
+                        <p><b>Inschrijving:</b><span>Je kan niet inschrijven op je eigen opdracht.</p></span>
+                    @else
+                        <p><b>Inschrijving:</b><span>Niet Ingeschreven</p></span>
+                        <div class="show-info-button-wrapper">
+                            <form  action={{route('participate.store')}} method="POST">
+                                @csrf
+                                <input type="hidden" name="exercise_id" value="{{$exercise->id}}">
+                                <input type="hidden" name="user_id" value="{{Auth::id()}}">
+                                <input class="btn show-info-button" type="submit" value="inschrijven">
+                            </form>
+                        </div>
+                    @endif
                 @endif
             </div>
             <div class="show-title">
