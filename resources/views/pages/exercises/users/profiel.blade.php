@@ -10,7 +10,7 @@
                     <th scope="col">Naam</th>
                     <th scope="col">Klus</th>
                     <th style="min-width: 200px" scope="col">Aantal inzendingen</th>
-                    <th scope="col">Eind Datum</th>
+                    <th style="min-width: 150px" scope="col">Eind Datum</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -35,7 +35,7 @@
                         <th scope="col">Naam</th>
                         <th scope="col">Klus</th>
                         <th style="min-width: 200px" scope="col">Aantal inzendingen</th>
-                        <th scope="col">Eind Datum</th>
+                        <th style="min-width: 150px" scope="col">Eind Datum</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -51,7 +51,7 @@
                 </table>
             </div>
         @else
-            <p>Je hebt niet ingeschreven voor opdrachten.</p>
+            <p>Je hebt je nog niet ingeschreven voor een opdracht.</p>
         @endif
     </div>
 @endsection

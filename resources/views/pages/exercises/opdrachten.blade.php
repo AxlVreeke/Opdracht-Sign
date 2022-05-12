@@ -30,7 +30,7 @@
                     <th scope="col">Naam</th>
                     <th scope="col">Klus</th>
                     <th style="min-width: 200px" scope="col">Aantal inzendingen</th>
-                    <th scope="col">Eind Datum</th>
+                    <th style="min-width: 150px" scope="col">Eind Datum</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -46,4 +46,5 @@
             </table>
         </div>
     </div>
+
 @endsection
