@@ -118,12 +118,16 @@ header{
     color: #ffcc00;
 }
 
-li.nav-item  a.nav-link{
+li.nav-item a.nav-link{
     color: #ffffff;
 }
 
 li.nav-item a.nav-link:hover {
     color: #ffcc00;
+}
+
+.dropdown-item:hover{
+    background-color: #e0e0e0;
 }
 
 /* main */
@@ -235,6 +239,7 @@ hr{
     margin-right: 30px;
     margin-bottom: 20px;
     transition: all .3s linear;
+    max-width: 205px;
 }
 
 .icon-wrapper:hover{

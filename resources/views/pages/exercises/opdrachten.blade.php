@@ -22,7 +22,10 @@
             <button style="padding: 0px 25px"  type="submit" class="btn btn-secondary navy">Filter</button>
         </div>
         </form>
+
+        @hasanyrole('opdrachtgever|admin')
         <a style="margin-bottom: 20px" href="{{route('exercises.create')}}" class="btn btn-primary">Nieuwe opdracht aanmaken</a>
+        @endhasanyrole
         <div class="exercise-table">
             <table class="table table-striped">
                 <thead>

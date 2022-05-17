@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <div class="show-info-button-wrapper">
-                    <a class="btn show-info-button" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
+                    <a class="btn show-info-button" href="../opdrachten" role="button">Opdracht aanmaken -></a>
                 </div>
             </div>
         </div>
@@ -74,7 +74,7 @@
                     <div class="design-icon">
                         <img src="../img/placeholder-icon.svg" alt="Foto">
                     </div>
-                    <p>Logo</p>
+                    <p>Raambelettering</p>
                 </div>
                 <div class="home-design-button">
                     <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
@@ -85,7 +85,7 @@
                     <div class="design-icon">
                         <img src="../img/placeholder-icon.svg" alt="Foto">
                     </div>
-                    <p>Logo</p>
+                    <p>Autobelettering</p>
                 </div>
                 <div class="home-design-button">
                     <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
@@ -96,7 +96,7 @@
                     <div class="design-icon">
                         <img src="../img/placeholder-icon.svg" alt="Foto">
                     </div>
-                    <p>Logo</p>
+                    <p>Spandoek</p>
                 </div>
                 <div class="home-design-button">
                     <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
@@ -107,7 +107,7 @@
                     <div class="design-icon">
                         <img src="../img/placeholder-icon.svg" alt="Foto">
                     </div>
-                    <p>Logo</p>
+                    <p>Kledingbedrukking</p>
                 </div>
                 <div class="home-design-button">
                     <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
@@ -118,7 +118,7 @@
                     <div class="design-icon">
                         <img src="../img/placeholder-icon.svg" alt="Foto">
                     </div>
-                    <p>Logo</p>
+                    <p>Interieurwrap</p>
                 </div>
                 <div class="home-design-button">
                     <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
@@ -129,7 +129,7 @@
                     <div class="design-icon">
                         <img src="../img/placeholder-icon.svg" alt="Foto">
                     </div>
-                    <p>Logo</p>
+                    <p>Vloerstickers</p>
                 </div>
                 <div class="home-design-button">
                     <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
@@ -140,7 +140,7 @@
                     <div class="design-icon">
                         <img src="../img/placeholder-icon.svg" alt="Foto">
                     </div>
-                    <p>Logo</p>
+                    <p>Stickers</p>
                 </div>
                 <div class="home-design-button">
                     <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
@@ -151,7 +151,7 @@
                     <div class="design-icon">
                         <img src="../img/placeholder-icon.svg" alt="Foto">
                     </div>
-                    <p>Logo</p>
+                    <p>Lichtbak</p>
                 </div>
                 <div class="home-design-button">
                     <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
