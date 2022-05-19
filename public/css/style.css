@@ -7,7 +7,7 @@
 }
 
 body{
-    font-size: 18px !important;
+    font-size: 1.125rem !important;
     font-family: Felix,"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif !important;
 }
 
@@ -387,7 +387,7 @@ hr{
     margin: 0px 20px 50px 20px;
 }
 
-/* detail-pagina */
+/* detail-page */
 
 .show-wrapper{
     display: flex;
@@ -421,12 +421,14 @@ hr{
 }
 
 .show-info-button-wrapper .show-info-button{
-    margin-top: 20px;
-    padding: 5px 35px;
-    background: rgb(9,133,208);
     background: linear-gradient(180deg, rgba(9,133,208,1) 29%, rgba(90,73,221,1) 100%);
-    color: #ffffff;
-    border: 0;
+    border:none;
+    padding: 0.8rem 1.7rem 0.8rem 1.7rem;
+    color:white;
+    border-radius: 1.5vw;
+    font-weight: bolder;
+    font-size: 1rem;
+    box-shadow: 0.1rem 0.2rem 1px 1px hsla(0,0%,0%, 0.2);
 }
 
 .show-info-button-wrapper .show-info-button:hover,
@@ -471,6 +473,11 @@ hr{
     color: #727070;
 }
 
+/* participate page */
+
+.participate-bold label{
+    font-weight: bold;
+}
 
 /* forms */
 

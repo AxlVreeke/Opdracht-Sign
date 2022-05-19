@@ -4,7 +4,6 @@
     <div class="container">
         <div class="main-title">{{$exercise->name}}</div>
         <hr>
-
         @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
@@ -14,19 +13,21 @@
                 </ul>
             </div>
         @endif
-
+        @hasexactroles('user')
+        <p>Alleen opdrachtgevers kunnen opdrachten bewerken!</p>
+        @else
         <form method="post" action="{{route('exercises.update', $exercise->id)}}" enctype="multipart/form-data">
             @csrf
             @method("PUT")
             <div class="form-group row">
-                <label for="name" class="col-sm-2 col-form-label">Opdracht Naam:</label>
+                <label style="font-weight: bold" for="name" class="col-sm-2 col-form-label">Opdracht Naam:</label>
                 <div class="col-sm-10">
                     <input type="text" name="name" class="form-control" id="name" value="{{$exercise->name}}">
                 </div>
             </div>
 
             <div class="form-group row">
-                <label for="description" class="col-sm-2 col-form-label">Beschrijving:</label>
+                <label style="font-weight: bold" for="description" class="col-sm-2 col-form-label">Beschrijving:</label>
                 <div class="col-sm-10">
                     <textarea name="description" class="form-control" id="description" maxlength="255" cols="30" rows="10">{{$exercise->description}}</textarea>
                     <div id="count" class="char-amount"></div>
@@ -34,7 +35,7 @@
             </div>
 
             <div class="form-group row">
-                <label for="job_id" class="col-sm-2 col-form-label">Klus:</label>
+                <label style="font-weight: bold" for="job_id" class="col-sm-2 col-form-label">Klus:</label>
                 <div class="col-sm-10">
                     <select class="form-select" name="job_id" id="job_id">
                         <option value="1" {{$exercise->job->name =="Raambelettering" ? 'selected' : '' }}>Raambelettering</option>
@@ -52,21 +53,21 @@
             </div>
 
             <div class="form-group row">
-                <label for="number" class="col-sm-2 col-form-label">Aantallen:</label>
+                <label style="font-weight: bold" for="number" class="col-sm-2 col-form-label">Aantallen:</label>
                 <div class="col-sm-10">
                     <input type="number" name="number" class="form-control" id="number" value="{{$exercise->number}}">
                 </div>
             </div>
 
             <div class="form-group row">
-                <label for="end_date" class="col-sm-2 col-form-label">Deadline:</label>
+                <label style="font-weight: bold" for="end_date" class="col-sm-2 col-form-label">Deadline:</label>
                 <div class="col-sm-10">
                     <input type="date" name="end_date" class="form-control" id="end_date" maxlength="255" placeholder="" value="{{$exercise->end_date}}">
                 </div>
             </div>
 
             <div class="form-group row">
-                <label for="file" class="col-sm-2 col-form-label">Upload bestand:</label>
+                <label style="font-weight: bold" for="file" class="col-sm-2 col-form-label">Upload bestand:</label>
                 <div class="col-sm-10">
                     <input type="file" name="file" class="form-control" id="file">
                 </div>
@@ -77,5 +78,7 @@
             </div>
         </form>
     </div>
+    @endhasexactroles
     <script src="../../../js/char-countdown.js"></script>
+    <script src="../../../js/max-date.js"></script>
 @endsection
