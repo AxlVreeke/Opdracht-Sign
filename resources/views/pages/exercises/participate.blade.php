@@ -11,7 +11,7 @@
         </div>
     @endif
 
-    <form method="post" action="{{route('exercises.store')}}" method="POST" enctype="multipart/form-data">
+    <form method="post" action="{{route('giveexercises.store')}}" method="POST" enctype="multipart/form-data">
         @csrf
 
         <div class="form-group row">
@@ -28,7 +28,9 @@
             </div>
         </div>
 
+
         <div class="form-group">
+            <input type="hidden" name="exercise_id" value="{{$exercise->id}}">
             <input class="mt-4 btn btn-primary" type="submit" value="Opslaan">
         </div>
     </form>

@@ -20,6 +20,14 @@ class Exercise extends Model
         return $this->belongsTo(User::class);
     }
 
+    public function participations() {
+        return $this->hasMany(Participate::class);
+    }
+
+    public function giveexercises() {
+        return $this->hasMany(Giveexercises::class);
+    }
+
     protected static function booted()
     {
         static::creating(function ($exercise) {

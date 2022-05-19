@@ -6,14 +6,15 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 
-class Participate extends Model
+class Giveexercises extends Model
 {
     use HasFactory;
 
-    protected $table = 'participates';
+    protected $table = 'giveexercises';
     protected $guarded = [];
 
-    public function user() {
+    public function user()
+    {
         return $this->belongsTo(User::class);
     }
 
@@ -21,4 +22,10 @@ class Participate extends Model
         return $this->belongsTo(Exercise::class);
     }
 
+    protected static function booted()
+    {
+        static::creating(function ($giveexercise) {
+            $giveexercise->user_id = Auth::id();
+        });
+    }
 }
