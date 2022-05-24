@@ -31,6 +31,7 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+
     <div class="container">
         <div class="flex-wrapper">
             <h2>Een opdracht laten maken?</h2>
@@ -44,6 +45,7 @@
             </div>
         </div>
     </div>
+
     <div class="parallax">
         <div class="parallax-item">
             <div class="flex-wrapper text-light">
@@ -59,11 +61,12 @@
                     </div>
                 </div>
                 <div class="show-info-button-wrapper">
-                    <a class="btn show-info-button" href="../opdrachten" role="button">Opdracht aanmaken -></a>
+                    <a class="btn show-info-button" href="../opdrachten" role="button">Opdracht kiezen -></a>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="container">
         <div class="flex-wrapper">
             <h2>Lorem <span>ipsum</span></h2>
@@ -77,7 +80,7 @@
                     <p>Raambelettering</p>
                 </div>
                 <div class="home-design-button">
-                    <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
+                    <a class="btn btn-secondary navy" href="{{route('filter-opdracht', 'category=1')}}" role="button">Opdracht zoeken -></a>
                 </div>
             </div>
             <div class="full-design">
@@ -88,7 +91,7 @@
                     <p>Autobelettering</p>
                 </div>
                 <div class="home-design-button">
-                    <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
+                    <a class="btn btn-secondary navy" href="{{route('filter-opdracht', 'category=2')}}" role="button">Opdracht zoeken -></a>
                 </div>
             </div>
             <div class="full-design">
@@ -99,7 +102,7 @@
                     <p>Spandoek</p>
                 </div>
                 <div class="home-design-button">
-                    <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
+                    <a class="btn btn-secondary navy" href="{{route('filter-opdracht', 'category=3')}}" role="button">Opdracht zoeken -></a>
                 </div>
             </div>
             <div class="full-design">
@@ -110,7 +113,7 @@
                     <p>Kledingbedrukking</p>
                 </div>
                 <div class="home-design-button">
-                    <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
+                    <a class="btn btn-secondary navy" href="{{route('filter-opdracht', 'category=4')}}" role="button">Opdracht zoeken -></a>
                 </div>
             </div>
             <div class="full-design">
@@ -121,7 +124,7 @@
                     <p>Interieurwrap</p>
                 </div>
                 <div class="home-design-button">
-                    <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
+                    <a class="btn btn-secondary navy" href="{{route('filter-opdracht', 'category=5')}}" role="button">Opdracht zoeken -></a>
                 </div>
             </div>
             <div class="full-design">
@@ -132,7 +135,7 @@
                     <p>Vloerstickers</p>
                 </div>
                 <div class="home-design-button">
-                    <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
+                    <a class="btn btn-secondary navy" href="{{route('filter-opdracht', 'category=6')}}" role="button">Opdracht zoeken -></a>
                 </div>
             </div>
             <div class="full-design">
@@ -143,7 +146,7 @@
                     <p>Stickers</p>
                 </div>
                 <div class="home-design-button">
-                    <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
+                    <a class="btn btn-secondary navy" href="{{route('filter-opdracht', 'category=7')}}" role="button">Opdracht zoeken -></a>
                 </div>
             </div>
             <div class="full-design">
@@ -154,7 +157,7 @@
                     <p>Lichtbak</p>
                 </div>
                 <div class="home-design-button">
-                    <a class="btn btn-secondary navy" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
+                    <a class="btn btn-secondary navy" href="{{route('filter-opdracht', 'category=8')}}" role="button">Opdracht zoeken -></a>
                 </div>
             </div>
         </div>
@@ -201,7 +204,6 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cupiditate eaque eligendi eos labore sint tempora vero voluptatum? A nihil nulla obcaecati? Eaque eligendi esse est ipsa nostrum, repellendus voluptates.</p>
             </div>
         </div>
-
     </div>
 
 @endsection

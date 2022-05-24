@@ -2,6 +2,8 @@
 
 @section('content')
     <div class="container">
+        @hasexactroles('user')
+        @else
         <div class="main-title">MIJN OPDRACHTEN</div>
         <div class="exercise-table">
             <table class="table table-striped">
@@ -25,10 +27,11 @@
                 </tbody>
             </table>
         </div>
+        @endhasexactroles
 
         <div class="main-title">INGESCHREVEN OPDRACHTEN</div>
-        @if(auth()->user()->assignedToExercise($exercise->id))
             <div class="exercise-table">
+            <!--
                 <table class="table table-striped">
                     <thead style="background-color: #78034a">
                     <tr>
@@ -49,9 +52,9 @@
                     @endforeach
                     </tbody>
                 </table>
+                 -->
             </div>
-        @else
             <p>Je hebt je nog niet ingeschreven voor een opdracht.</p>
-        @endif
+        </div>
     </div>
 @endsection

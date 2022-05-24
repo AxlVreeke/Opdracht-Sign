@@ -1,5 +1,6 @@
 /* can't select past dates */
 
+/*
 $(function(){
     var dtToday = new Date();
 
@@ -15,3 +16,6 @@ $(function(){
 
     $('#end_date').attr('min', maxDate);
 });
+ */
+
+$(function(){var t=new Date,e=t.getMonth()+1,n=t.getDate(),a=t.getFullYear();e<10&&(e="0"+e.toString()),n<10&&(n="0"+n.toString());var r=a+"-"+e+"-"+n;$("#end_date").attr("min",r)});

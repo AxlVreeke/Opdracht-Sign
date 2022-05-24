@@ -37,6 +37,7 @@
                 </tr>
                 </thead>
                 <tbody>
+
                 @foreach($exercises as $exercise)
                     <tr>
                         <td><span><a href="{{ route('exercises.show', $exercise->id) }}">{{ $exercise->name }}</span></a><p>{{ $exercise->description }}</p></td>
@@ -45,6 +46,7 @@
                         <td>{{ $exercise->end_date }}</td>
                     </tr>
                 @endforeach
+
                 </tbody>
             </table>
         </div>

@@ -415,6 +415,9 @@ hr{
     left: 180px;
 }
 
+/* buttons show */
+
+.show-assign-button-wrapper,
 .show-info-button-wrapper{
     display: flex;
     justify-content: center;
@@ -431,6 +434,21 @@ hr{
     box-shadow: 0.1rem 0.2rem 1px 1px hsla(0,0%,0%, 0.2);
 }
 
+.show-assign-button-wrapper .show-assign-button{
+    background: linear-gradient(180deg, rgba(9,133,208,1) 29%, rgba(90,73,221,1) 100%);
+    border:none;
+    padding: 0.5rem 2.2rem 0.5rem 2.2rem;
+    color:white;
+    border-radius: 6px;
+    font-weight: bolder;
+    font-size: 1rem;
+    box-shadow: 2px 3px 3px #9ca3af;
+}
+
+.show-assign-button-wrapper .show-assign-button:hover,
+.show-assign-button-wrapper .show-assign-button:focus,
+.show-assign-button-wrapper .show-assign-button:hover:active,
+.show-assign-button-wrapper .show-assign-button:active,
 .show-info-button-wrapper .show-info-button:hover,
 .show-info-button-wrapper .show-info-button:focus,
 .show-info-button-wrapper .show-info-button:hover:active,
