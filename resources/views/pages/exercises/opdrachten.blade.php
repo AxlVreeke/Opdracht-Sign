@@ -37,16 +37,17 @@
                 </tr>
                 </thead>
                 <tbody>
-
-                @foreach($exercises as $exercise)
+                @forelse($exercises as $exercise)
                     <tr>
                         <td><span><a href="{{ route('exercises.show', $exercise->id) }}">{{ $exercise->name }}</span></a><p>{{ $exercise->description }}</p></td>
                         <td>{{ $exercise->job->name }}</td>
                         <td>{{ $exercise->entries }}</td>
                         <td>{{ $exercise->end_date }}</td>
                     </tr>
-                @endforeach
-
+                @empty
+                    <p>Er zijn geen opdrachten in deze categorie.</p>
+                    <style>thead{display: none;}</style>
+                @endforelse
                 </tbody>
             </table>
         </div>
