@@ -60,7 +60,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi architecto assumenda commodi consequuntur delectus dignissimos eius eos est, facere illo itaque laborum, magnam maiores, molestiae nostrum numquam tenetur velit.</p>
                     </div>
                 </div>
-                <div class="show-info-button-wrapper">
+                <div class="main-info-button-wrapper">
                     <a class="btn show-info-button" href="../opdrachten" role="button">Opdracht kiezen -></a>
                 </div>
             </div>
