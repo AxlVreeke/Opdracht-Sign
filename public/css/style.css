@@ -328,7 +328,7 @@ hr{
 
 .explanation-content{
     border-style: solid;
-    border-color: #69197c;
+    border-color: black;
     border-width: 2px;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -368,7 +368,7 @@ hr{
     font-weight: bold;
 }
 .explanation-button a:hover{
-    background-color: #beb0ff;
+    background-color: #69197c;
     border: #69197c 2px solid;
     margin-bottom: -2px;
 }

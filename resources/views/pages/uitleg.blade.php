@@ -57,7 +57,7 @@
                     <p><img src="img/school4.jpg" alt="schoolfoto 4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi dolorem, est eum eveniet expedita facilis fugit illo incidunt iure maxime nihil, qui recusandae repellat repellendus repudiandae similique sit velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores excepturi id labore maxime officia, pariatur reiciendis suscipit veritatis. Dignissimos iusto nam odit suscipit! A aliquam architecto aut ea natus sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae eius esse quam similique! Accusamus, at, debitis dolor facere impedit in mollitia nisi placeat possimus repellat repudiandae saepe tenetur velit?</p>
                 </div>
                 <div class="explanation-button">
-                    <a class="btn btn-secondary darkpurple" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
+                    <a class="btn btn-dark darkpurple" href="{{route('exercises.create')}}" role="button">Opdracht aanmaken -></a>
                 </div>
             </div>
         </div>
