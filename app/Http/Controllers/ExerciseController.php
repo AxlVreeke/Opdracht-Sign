@@ -58,7 +58,7 @@ class ExerciseController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'description' => 'required',
-            'job_id' => 'required',
+            'job_id' => 'required|not_in:0',
             'number' => 'numeric',
             'end_date' => 'required',
             'file' => 'required'

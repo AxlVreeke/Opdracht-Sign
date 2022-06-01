@@ -264,6 +264,8 @@ hr{
 }
 
 .home-design-button a{
+    transition: ease;
+    transition-duration: 0.3s;
     font-weight: bold;
     width: 202px;
 }
@@ -274,17 +276,21 @@ hr{
     height: 40px;
 }
 
+.home-design-button button:hover,
 .home-design-button a:hover{
-    background-color: #beb0ff;
-    border: #69197c 2px solid;
-    margin-bottom: -2px;
+    transition: ease;
+    transition-duration: 0.3s;
+    background-color: #120a50;
+    border-radius: 25px;
 }
 
-.home-design-button button:hover{
-    background-color: #beb0ff;
-    border: #69197c 2px solid;
-
+.home-design-button a:focus,
+.home-design-button a:active,
+.home-design-button a:hover:active {
+    background-color: #120a50 !important;
+    box-shadow: none !important;
 }
+
 
 /* carousel css */
 
@@ -417,13 +423,13 @@ hr{
 
 /* buttons show */
 
-.show-assign-button-wrapper,
-.show-info-button-wrapper{
+.main-info-button-wrapper,
+.show-assign-button-wrapper{
     display: flex;
     justify-content: center;
 }
 
-.show-info-button-wrapper .show-info-button{
+.main-info-button-wrapper .show-info-button{
     background: linear-gradient(180deg, rgba(9,133,208,1) 29%, rgba(90,73,221,1) 100%);
     border:none;
     padding: 0.8rem 1.7rem 0.8rem 1.7rem;
@@ -449,10 +455,10 @@ hr{
 .show-assign-button-wrapper .show-assign-button:focus,
 .show-assign-button-wrapper .show-assign-button:hover:active,
 .show-assign-button-wrapper .show-assign-button:active,
-.show-info-button-wrapper .show-info-button:hover,
-.show-info-button-wrapper .show-info-button:focus,
-.show-info-button-wrapper .show-info-button:hover:active,
-.show-info-button-wrapper .show-info-button:active{
+.main-info-button-wrapper .show-info-button:hover,
+.main-info-button-wrapper .show-info-button:focus,
+.main-info-button-wrapper .show-info-button:hover:active,
+.main-info-button-wrapper .show-info-button:active{
     background: rgb(10,110,166);
     background: linear-gradient(180deg, rgba(10,110,166,1) 29%, rgba(87,76,170,1) 100%);
 }
