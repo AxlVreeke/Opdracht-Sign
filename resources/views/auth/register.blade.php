@@ -49,11 +49,11 @@
             <div class="mt-4"> <x-label>Ik ben een:</x-label></div>
             <div class="reg-radio-main" style="display: flex; flex-direction: row; justify-content: flex-start; padding-top: 10px;">
                 <div class="reg-radio-flex" style="display: flex; align-items: center; padding-right: 85px;">
-                    <input type="radio" id="user" name="action" value="user">
+                    <input type="radio" id="user" name="action" value="user" required>
                     <label style="padding-left: 3px;" for="user">Leerling</label>
                 </div>
                 <div class="reg-radio-flex" style="display: flex; align-items: center;">
-                    <input type="radio" id="opdrachtgever" name="action" value="opdrachtgever">
+                    <input type="radio" id="opdrachtgever" name="action" value="opdrachtgever" required>
                     <label style="padding-left: 3px;" for="opdrachtgever">Opdrachtgever</label>
                 </div>
             </div>

@@ -37,7 +37,8 @@
                 <table class="table table-striped">
                     <thead style="background-color: #78034a">
                     <tr>
-                        <th scope="col">Naam</th>
+                        <th scope="col">Opdrachtnaam</th>
+                        <th scope="col">Informatie</th>
                         <th scope="col">Klus</th>
                         <th style="min-width: 200px" scope="col">Aantal inzendingen</th>
                         <th style="min-width: 150px" scope="col">Eind Datum</th>
@@ -46,7 +47,8 @@
                     <tbody>
                     @forelse($user->giveexercises as $exercise)
                         <tr>
-                            <td><span><a href="{{ route('exercise.show', $exercise->id) }}">{{ $exercise->name }}</span></a><p>{{ $exercise->description }}</p></td>
+                            <td><span><a href="{{ route('exercise.show', $exercise->id) }}">{{ $exercise->exercise->name }}</span></a><p>{{ $exercise->exercise->description }}</p></td>
+                            <td>{{ $exercise->description }}</td>
                             <td>{{ $exercise->exercise->job->name}}</td>
                             <td>{{ $exercise->exercise->entries}}</td>
                             <td>{{ $exercise->exercise->end_date }}</td>
