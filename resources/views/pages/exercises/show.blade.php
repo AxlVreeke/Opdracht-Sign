@@ -62,4 +62,28 @@
         </div>
     @endif
 
+    <div style="padding: 25px 25px" class="participants">
+        <div class="container">
+            <div class="exercise-table">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">Informatie</th>
+                        <th scope="col">Ingeleverd Door</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach($exercise->giveexercises as $giveexercise)
+                        @if(auth()->user()->hasRole('admin') ||  $exercise->user_id == auth()->user()->id)
+                            <tr>
+                                <td>{{ $giveexercise->description }}</td>
+                                <td>{{ $giveexercise->user->name }}</td>
+                            </tr>
+                        @endif
+                    @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 @endsection
