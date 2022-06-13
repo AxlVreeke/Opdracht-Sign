@@ -11,7 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/style.css')}}">
     <link rel="shortcut icon" href="/favicon.ico"/>
     <title>Curio</title>
 </head>
@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-lg" style="background-color: #03357c;">
         <div class="container">
             <a class="navbar-brand" href="{{route('home')}}">
-                <img src="../../../img/curio-01-zwart-logo-rgb.png" width="100" height="auto" class="d-inline-block align-top" alt="Foto">
+                <img src="{{asset('img/curio-01-zwart-logo-rgb.png')}}" width="100" height="auto" class="d-inline-block align-top" alt="Foto">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -89,7 +89,7 @@
                     <h6 class="text-uppercase fw-bold mb-4" style="border-bottom: solid 1px #fff; padding-bottom: 15px">
                         <i class="fas me-3"></i>Sign
                     </h6>
-                    <p>
+                    <p style="text-align: left">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi iusto quis recusandae. A animi asperiores, at cum deleniti deserunt dignissimos et eum fuga ipsam laboriosam laborum nihil quaerat sequi!
                     </p>
                 </div>
@@ -165,6 +165,6 @@
     </div>
     <!-- Copyright -->
 </footer>
-<script src="js/main.js"></script>
+<script src="{{asset('js/main.js')}}"></script>
 </body>
 </html>

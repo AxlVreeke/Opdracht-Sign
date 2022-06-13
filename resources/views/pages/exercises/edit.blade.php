@@ -79,6 +79,6 @@
         </form>
     </div>
     @endhasexactroles
-    <script src="../../../js/char-countdown.js"></script>
-    <script src="../../../js/max-date.js"></script>
+    <script src="{{asset('/js/char-countdown.js')}}"></script>
+    <script src="{{asset('/js/max-date.js')}}"></script>
 @endsection

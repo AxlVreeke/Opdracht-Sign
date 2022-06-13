@@ -9,7 +9,7 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100 overlay-image" src="../img/placeholder-home.avif" alt="First slide">
+                <img class="d-block w-100 overlay-image" src="{{asset('img/placeholder-home.avif')}}" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Welkom op de Sign page!</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda blanditiis corporis doloremque, ea nobis porro repellat reprehenderit. Beatae consectetur nam nisi porro? Accusamus aliquid itaque laborum nobis nulla pariatur?</p>
@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="main-info-button-wrapper">
-                    <a class="btn show-info-button" href="../opdrachten" role="button">Opdracht kiezen -></a>
+                    <a class="btn show-info-button" href="{{route('opdrachten')}}" role="button">Opdracht kiezen -></a>
                 </div>
             </div>
         </div>
@@ -75,7 +75,7 @@
             <div class="full-design">
                 <div class="icon-wrapper">
                     <div class="design-icon">
-                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                        <img src="{{asset('img/placeholder-icon.svg')}}" alt="Foto">
                     </div>
                     <p>Raambelettering</p>
                 </div>
@@ -86,7 +86,7 @@
             <div class="full-design">
                 <div class="icon-wrapper">
                     <div class="design-icon">
-                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                        <img src="{{asset('img/placeholder-icon.svg')}}" alt="Foto">
                     </div>
                     <p>Autobelettering</p>
                 </div>
@@ -97,7 +97,7 @@
             <div class="full-design">
                 <div class="icon-wrapper">
                     <div class="design-icon">
-                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                        <img src="{{asset('img/placeholder-icon.svg')}}" alt="Foto">
                     </div>
                     <p>Spandoek</p>
                 </div>
@@ -108,7 +108,7 @@
             <div class="full-design">
                 <div class="icon-wrapper">
                     <div class="design-icon">
-                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                        <img src="{{asset('img/placeholder-icon.svg')}}" alt="Foto">
                     </div>
                     <p>Kledingbedrukking</p>
                 </div>
@@ -119,7 +119,7 @@
             <div class="full-design">
                 <div class="icon-wrapper">
                     <div class="design-icon">
-                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                        <img src="{{asset('img/placeholder-icon.svg')}}" alt="Foto">
                     </div>
                     <p>Interieurwrap</p>
                 </div>
@@ -130,7 +130,7 @@
             <div class="full-design">
                 <div class="icon-wrapper">
                     <div class="design-icon">
-                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                        <img src="{{asset('img/placeholder-icon.svg')}}" alt="Foto">
                     </div>
                     <p>Vloerstickers</p>
                 </div>
@@ -141,7 +141,7 @@
             <div class="full-design">
                 <div class="icon-wrapper">
                     <div class="design-icon">
-                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                        <img src="{{asset('img/placeholder-icon.svg')}}" alt="Foto">
                     </div>
                     <p>Stickers</p>
                 </div>
@@ -152,7 +152,7 @@
             <div class="full-design">
                 <div class="icon-wrapper">
                     <div class="design-icon">
-                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                        <img src="{{asset('img/placeholder-icon.svg')}}" alt="Foto">
                     </div>
                     <p>Lichtbak</p>
                 </div>
@@ -170,7 +170,7 @@
             <div class="full-design-left">
                 <div class="icon-wrapper">
                     <div class="design-icon">
-                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                        <img src="{{asset('img/placeholder-icon.svg')}}" alt="Foto">
                     </div>
                     <p>Logo</p>
                 </div>
@@ -179,7 +179,7 @@
             <div class="full-design-right">
                 <div class="icon-wrapper">
                     <div class="design-icon">
-                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                        <img src="{{asset('img/placeholder-icon.svg')}}" alt="Foto">
                     </div>
                     <p>Logo</p>
                 </div>
@@ -188,7 +188,7 @@
             <div class="full-design-left">
                 <div class="icon-wrapper">
                     <div class="design-icon">
-                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                        <img src="{{asset('img/placeholder-icon.svg')}}" alt="Foto">
                     </div>
                     <p>Logo</p>
                 </div>
@@ -197,7 +197,7 @@
             <div class="full-design-right">
                 <div class="icon-wrapper">
                     <div class="design-icon">
-                        <img src="../img/placeholder-icon.svg" alt="Foto">
+                        <img src="{{asset('img/placeholder-icon.svg')}}" alt="Foto">
                     </div>
                     <p>Logo</p>
                 </div>

@@ -2,7 +2,7 @@
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
-                <img src="/img/curio-01-zwart-logo-rgb.png" width="200" alt="Curio Logo">
+                <img src="{{asset('/img/curio-01-zwart-logo-rgb.png')}}" width="200" alt="Curio Logo">
             </a>
         </x-slot>
 

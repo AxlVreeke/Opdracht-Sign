@@ -33,13 +33,13 @@
                 <div class="row">
                     <div class="explanation-images">
                         <div class="col d-flex justify-content-center">
-                            <img src="img/school.jpg" alt="schoolfoto 1">
+                            <img src="{{asset('img/school.jpg')}}" alt="schoolfoto 1">
                         </div>
                         <div class="col d-flex justify-content-center">
-                            <img src="img/school2.jpg" alt="schoolfoto 2">
+                            <img src="{{asset('img/school2.jpg')}}" alt="schoolfoto 2">
                         </div>
                         <div class="col d-flex justify-content-center">
-                            <img src="img/school3.jpg" alt="schoolfoto 3">
+                            <img src="{{asset('img/school3.jpg')}}" alt="schoolfoto 3">
                         </div>
                     </div>
                     <div class="w-100"></div>
