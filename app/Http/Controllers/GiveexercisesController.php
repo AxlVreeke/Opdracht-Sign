@@ -58,7 +58,8 @@ class GiveexercisesController extends Controller
      */
     public function show($id)
     {
-        //
+        $giveexercise = Giveexercises::findOrFail($id);
+        return view('pages/exercises/jobs/show')->with('giveexercise', $giveexercise);
     }
 
     /**

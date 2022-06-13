@@ -62,4 +62,30 @@
         </div>
     @endif
 
+    @if(auth()->user()->hasRole('admin') ||  $exercise->user_id == auth()->user()->id)
+        <div style="padding: 25px 25px" class="participants">
+            <div class="container">
+                <div class="main-title">INGELEVERDE OPDRACHTEN</div>
+                <div class="exercise-table">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Informatie</th>
+                            <th scope="col">Ingeleverd Door</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach($exercise->giveexercises as $giveexercise)
+                            <tr>
+                                <td><a href="{{ route('giveexercises.show', $giveexercise->id) }}">{{ $giveexercise->description }}</a></td>
+                                <td>{{ $giveexercise->user->name }}</td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    @endif
+
 @endsection
