@@ -43,10 +43,6 @@
         </div>
     </div>
 
-    @if(auth()->user()->assignedToExercise($exercise->id))
-        @include('pages.exercises.participate')
-    @endif
-
     @if(auth()->user() == $exercise->user or auth()->user()->hasRole('admin'))
         <div class="show-button-wrapper">
             <div class="show-button">

@@ -21,7 +21,7 @@
                             <td><span><a href="{{ route('exercise.show', $exercise->id) }}">{{ $exercise->name }}</span></a><p>{{ $exercise->description }}</p></td>
                             <td>{{ $exercise->job->name }}</td>
                             <td>{{ $exercise->entries }}</td>
-                            <td>{{ $exercise->end_date }}</td>
+                            <td>{{ \Carbon\Carbon::createFromTimestamp(strtotime($exercise->end_date))->format('d-m-Y')}}</td>
                         </tr>
                     @empty
                         <p>Je hebt nog geen opdrachten aangemaakt.</p>
@@ -51,7 +51,7 @@
                             <td>{{ $exercise->description }}</td>
                             <td>{{ $exercise->exercise->job->name}}</td>
                             <td>{{ $exercise->exercise->entries}}</td>
-                            <td>{{ $exercise->exercise->end_date }}</td>
+                            <td>{{ \Carbon\Carbon::createFromTimestamp(strtotime($exercise->exercise->end_date))->format('d-m-Y')}}</td>
                         </tr>
                         @empty
                         <p>Je hebt nog geen opdrachten aangemaakt.</p>

@@ -32,7 +32,7 @@
                 <tr>
                     <th scope="col">Naam</th>
                     <th scope="col">Klus</th>
-                    <th style="min-width: 200px" scope="col">Aantal inzendingen</th>
+                    <th style="min-width: 200px;" scope="col">Aantal inzendingen</th>
                     <th style="min-width: 150px" scope="col">Eind Datum</th>
                 </tr>
                 </thead>
@@ -42,8 +42,9 @@
                         <td><span><a href="{{ route('exercises.show', $exercise->id) }}">{{ $exercise->name }}</span></a><p>{{ $exercise->description }}</p></td>
                         <td>{{ $exercise->job->name }}</td>
                         <td>{{ $exercise->entries }}</td>
-                        <td>{{ $exercise->end_date }}</td>
+                        <td>{{ \Carbon\Carbon::createFromTimestamp(strtotime($exercise->end_date))->format('d-m-Y')}}</td>
                     </tr>
+
                 @empty
                     <p>Er zijn geen opdrachten in deze categorie.</p>
                     <style>thead{display: none;}</style>
@@ -53,4 +54,5 @@
         </div>
     </div>
 
+    <script src="{{asset('/js/tablesort.js')}}"></script>
 @endsection
