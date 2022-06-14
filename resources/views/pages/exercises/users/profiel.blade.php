@@ -6,12 +6,12 @@
         @else
             <div class="main-title">MIJN OPDRACHTEN</div>
             <div class="exercise-table">
-                <table class="table table-striped">
+                <table class="table sortable table-striped">
                     <thead style="background-color: #78034a">
                     <tr>
                         <th scope="col">Naam</th>
                         <th scope="col">Klus</th>
-                        <th style="min-width: 200px" scope="col">Aantal inzendingen</th>
+                        <th style="min-width: 210px" scope="col">Aantal inzendingen</th>
                         <th style="min-width: 150px" scope="col">Eind Datum</th>
                     </tr>
                     </thead>
@@ -34,13 +34,13 @@
 
             <div class="main-title">MIJN INZENDINGEN</div>
             <div class="exercise-table">
-                <table class="table table-striped">
+                <table class="table sortable table-striped">
                     <thead style="background-color: #78034a">
                     <tr>
                         <th scope="col">Opdrachtnaam</th>
                         <th scope="col">Informatie</th>
                         <th scope="col">Klus</th>
-                        <th style="min-width: 200px" scope="col">Aantal inzendingen</th>
+                        <th style="min-width: 210px" scope="col">Aantal inzendingen</th>
                         <th style="min-width: 150px" scope="col">Eind Datum</th>
                     </tr>
                     </thead>
@@ -61,4 +61,6 @@
                 </table>
             </div>
     </div>
+
+    <script src="{{asset('/js/sorttable.js')}}"></script>
 @endsection

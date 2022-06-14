@@ -24,15 +24,15 @@
         </form>
 
         @hasanyrole('opdrachtgever|admin')
-        <a style="margin-bottom: 20px" href="{{route('exercises.create')}}" class="btn btn-primary">Nieuwe opdracht aanmaken</a>
+        <a style="margin-bottom: 20px;" href="{{route('exercises.create')}}" class="btn btn-primary">Nieuwe opdracht aanmaken</a>
         @endhasanyrole
         <div class="exercise-table">
-            <table class="table table-striped">
+            <table id="1" class="table sortable table-striped">
                 <thead>
                 <tr>
                     <th scope="col">Naam</th>
                     <th scope="col">Klus</th>
-                    <th style="min-width: 200px;" scope="col">Aantal inzendingen</th>
+                    <th style="min-width: 210px;" scope="col">Aantal inzendingen</th>
                     <th style="min-width: 150px" scope="col">Eind Datum</th>
                 </tr>
                 </thead>
@@ -54,5 +54,5 @@
         </div>
     </div>
 
-    <script src="{{asset('/js/tablesort.js')}}"></script>
+    <script src="{{asset('/js/sorttable.js')}}"></script>
 @endsection

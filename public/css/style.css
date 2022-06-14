@@ -393,6 +393,33 @@ hr{
     margin: 0px 20px 50px 20px;
 }
 
+/* edit-page */
+
+.char-amount{
+    position: absolute;
+    bottom: 4px;
+    right: 25px;
+    color: #727070;
+}
+
+/* Sortable tables */
+
+table.sortable thead {
+    background: rgb(23,83,167);
+    background: linear-gradient(90deg, rgba(23,83,167,1) 0%, rgba(126,153,190,1) 100%);
+    color: white;
+    text-decoration: underline;
+}
+
+.exercise-table span{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+
 /* detail-page */
 
 .show-wrapper{
@@ -475,26 +502,6 @@ hr{
 
 .show-button .btn-secondary:hover{
     background-color: #042759;
-}
-
-/* opdrachten-pagina */
-
-.exercise-table thead{
-    background-color: #03357c;
-    color: white;
-    text-decoration: underline;
-}
-
-.exercise-table span{
-    color: #03357c;
-    text-transform: uppercase;
-}
-
-.char-amount{
-    position: absolute;
-    bottom: 4px;
-    right: 25px;
-    color: #727070;
 }
 
 /* participate page */
