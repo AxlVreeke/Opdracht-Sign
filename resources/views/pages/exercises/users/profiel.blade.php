@@ -47,7 +47,7 @@
                     <tbody>
                     @forelse($user->giveexercises as $exercise)
                         <tr>
-                            <td><span><a href="{{ route('exercise.show', $exercise->id) }}">{{ $exercise->exercise->name }}</span></a><p>{{ $exercise->exercise->description }}</p></td>
+                            <td><span><a href="{{ route('exercise.show', $exercise->exercise_id) }}">{{ $exercise->exercise->name }}</span></a><p>{{ $exercise->exercise->description }}</p></td>
                             <td>{{ $exercise->description }}</td>
                             <td>{{ $exercise->exercise->job->name}}</td>
                             <td>{{ $exercise->exercise->entries}}</td>
