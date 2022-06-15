@@ -20,6 +20,9 @@
             <h4><b>Bestand:</b></h4>
             <span> <img style="width: 370px; max-height: 800px; height: auto; margin-top: 10px;" src="{{asset('storage/user-img/'.$giveexercise->file)}}" width="70px" height="70px" alt="Uw foto"></span>
         </div>
+        <hr>
     </div>
+
+
 
 @endsection
