@@ -2,7 +2,6 @@
 
 @section('content')
     <div class="container">
-        <hr>
         <div class="show-wrapper">
             <div class="show-info">
                 <div class="show-title">
