@@ -27,7 +27,7 @@
         <a style="margin-bottom: 20px;" href="{{route('exercises.create')}}" class="btn btn-primary">Nieuwe opdracht aanmaken</a>
         @endhasanyrole
         <div class="exercise-table">
-            <table id="1" class="table sortable table-striped">
+            <table class="table sortable table-striped">
                 <thead>
                 <tr>
                     <th scope="col">Naam</th>

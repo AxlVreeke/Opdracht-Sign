@@ -2,12 +2,14 @@
 
 @section('content')
     <div class="container">
+        <div class="main-title">{{$giveexercise->exercise->name}}</div>
+        <hr>
         <div class="show-wrapper">
             <div class="show-info">
                 <div class="show-title">
                     <h4><b>Ingeleverde opdracht gegevens:</b></h4>
                 </div>
-                <p><b>Ingeleverde persoon:</b><span>{{$giveexercise->user->name}}</p></span>
+                <p><b>Ingeleverd door:</b><span>{{$giveexercise->user->name}}</p></span>
                 <p><b>Gekozen opdracht:</b><span>{{$giveexercise->exercise->name}}</p></span>
             </div>
             <div class="show-title">
@@ -22,7 +24,5 @@
         </div>
         <hr>
     </div>
-
-
 
 @endsection

@@ -43,10 +43,6 @@
         </div>
     </div>
 
-    @if(auth()->user()->assignedToExercise($exercise->id))
-        @include('pages.exercises.participate')
-    @endif
-
     @if(auth()->user() == $exercise->user or auth()->user()->hasRole('admin'))
         <div class="show-button-wrapper">
             <div class="show-button">
@@ -62,29 +58,58 @@
         </div>
     @endif
 
+    @if(auth()->user()->assignedToExercise($exercise->id))
+        @include('pages.exercises.participate')
+    @endif
+
+
     @if(auth()->user()->hasRole('admin') ||  $exercise->user_id == auth()->user()->id)
         <div style="padding: 25px 25px" class="participants">
             <div class="container">
-                <div class="main-title">INGELEVERDE OPDRACHTEN</div>
-                <div class="exercise-table">
-                    <table class="table table-striped">
+                <div class="show-title-icon">
+                    <div class="main-title" style="font-size: 1.37rem">INGELEVERDE OPDRACHTEN: </div>
+                    <div class="main-title"><i style="font-size: x-large; cursor: pointer;" class="fa fa-solid fa-folder-open" id="showElement"></i></div>
+                </div>
+                <div class="exercise-table" id="tableHide">
+                    <table class="table sortable table-striped">
                         <thead>
                         <tr>
-                            <th scope="col">Informatie</th>
-                            <th scope="col">Ingeleverd Door</th>
+                            <th style="min-width: 220px; max-width: 220px" scope="col">Ingeleverd door</th>
+                            <th style="min-width: 400px" scope="col">Informatie</th>
+                            <th style="width: 200px" scope="col"></th>
                         </tr>
                         </thead>
                         <tbody>
                         @foreach($exercise->giveexercises as $giveexercise)
-                                <tr>
-                                    <td><a href="{{ route('giveexercises.show', $giveexercise->id) }}">{{ $giveexercise->description }}</a></td>
-                                    <td>{{ $giveexercise->user->name }}</td>
-                                </tr>
+                            <tr>
+                                <td>{{ $giveexercise->user->name }}</td>
+                                <td>{{ $giveexercise->description }}</a></td>
+                                <td>
+                                    <div style="max-width: 200px;" class="show-assign-button-wrapper">
+                                        <a class="btn show-assign-button" href="{{ route('giveexercises.show', $giveexercise->id) }}" role="button">Meer info</a>
+                                    </div>
+                                </td>
+                            </tr>
                         @endforeach
                         </tbody>
                     </table>
                 </div>
+                <div class="card-wrapper"  id="cardWrapper">
+                    @foreach($exercise->giveexercises as $giveexercise)
+                        <div class="card">
+                            <span> <img class="card-img-top" src="{{asset('storage/user-img/'.$giveexercise->file)}}" alt="Uw foto"></span>
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Gemaakt door:</b> {{ $giveexercise->user->name }}</h5>
+                                <p><b>Informatie:</b> {{ $giveexercise->description }}</p>
+                                <div style="justify-content: flex-start; align-items: flex-end;" class="show-assign-button-wrapper">
+                                    <a class="btn show-assign-button" href="{{ route('giveexercises.show', $giveexercise->id) }}" role="button">Meer info</a>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
             </div>
         </div>
     @endif
+
 @endsection
