@@ -31,8 +31,16 @@
 
         <div class="form-group">
             <input type="hidden" name="exercise_id" value="{{$exercise->id}}">
-            <input class="mt-4 btn btn-primary" type="submit" value="Opslaan">
+            <input class="mt-4 btn btn-primary" onclick="return clicked();" type="submit" value="Opslaan">
         </div>
     </form>
 </div>
 <script src="../../js/char-countdown.js"></script>
+?>
+<script>
+    function clicked() {
+        return alert('Opdracht succesvol ingeleverd!');
+    }
+</script>
+
+<?php
