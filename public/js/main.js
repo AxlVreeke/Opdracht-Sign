@@ -16,14 +16,6 @@ showElement.addEventListener('click', () => {
 })
 
 showElement.addEventListener('click', () => {
-    if (cardWrapper.style.display === "flex") {
-        cardWrapper.style.display = "none";
-    } else {
-        cardWrapper.style.display = "flex";
-    }
-})
-
-showElement.addEventListener('click', () => {
     if (tableHide.style.display === "none") {
         tableHide.style.display = "flex";
     } else {
@@ -31,10 +23,21 @@ showElement.addEventListener('click', () => {
     }
 })
 
+showElement.addEventListener('click', () => {
+    if (cardWrapper.style.display === "flex") {
+        cardWrapper.style.display = "none";
+    } else {
+        cardWrapper.style.display = "flex";
+    }
+})
+
+$('.ico-switch').click(function(){
+    $(this).find('i').toggleClass('fa-folder-open fa-folder')
+});
+
 function clearForm() {
     document.getElementById("report-page-form-form").reset();
 }
-
 */
 
-const showElement=document.getElementById("showElement"),fullDesign=document.getElementById("fullDesign"),cardWrapper=document.getElementById("cardWrapper"),tableHide=document.getElementById("tableHide");function clearForm(){document.getElementById("report-page-form-form").reset()}showElement.addEventListener("click",()=>{"block"===fullDesign.style.display?fullDesign.style.display="none":fullDesign.style.display="block"}),showElement.addEventListener("click",()=>{"flex"===cardWrapper.style.display?cardWrapper.style.display="none":cardWrapper.style.display="flex"}),showElement.addEventListener("click",()=>{"none"===tableHide.style.display?tableHide.style.display="flex":tableHide.style.display="none"})
+const showElement=document.getElementById("showElement"),fullDesign=document.getElementById("fullDesign"),cardWrapper=document.getElementById("cardWrapper"),tableHide=document.getElementById("tableHide");function clearForm(){document.getElementById("report-page-form-form").reset()}showElement.addEventListener("click",()=>{"block"===fullDesign.style.display?fullDesign.style.display="none":fullDesign.style.display="block"}),showElement.addEventListener("click",()=>{"none"===tableHide.style.display?tableHide.style.display="flex":tableHide.style.display="none"}),showElement.addEventListener("click",()=>{"flex"===cardWrapper.style.display?cardWrapper.style.display="none":cardWrapper.style.display="flex"}),$(".ico-switch").click(function(){$(this).find("i").toggleClass("fa-folder-open fa-folder")})

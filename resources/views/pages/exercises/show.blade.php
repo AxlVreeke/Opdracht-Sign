@@ -62,13 +62,14 @@
         @include('pages.exercises.participate')
     @endif
 
-
     @if(auth()->user()->hasRole('admin') ||  $exercise->user_id == auth()->user()->id)
         <div style="padding: 25px 25px" class="participants">
             <div class="container">
                 <div class="show-title-icon">
-                    <div class="main-title" style="font-size: 1.37rem">INGELEVERDE OPDRACHTEN: </div>
-                    <div class="main-title"><i style="font-size: x-large; cursor: pointer;" class="fa fa-solid fa-folder-open" id="showElement"></i></div>
+                    <div class="main-title" style="font-size: 1.37rem">INGELEVERDE OPDRACHTEN:</div>
+                    <div class="main-title">
+                        <div class="ico-switch"><i style="font-size: x-large; cursor: pointer;" class="fa fa-solid fa-folder" id="showElement"></i></div>
+                    </div>
                 </div>
                 <div class="exercise-table" id="tableHide">
                     <table class="table sortable table-striped">
