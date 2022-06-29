@@ -60,27 +60,14 @@ class GiveexercisesController extends Controller
     {
         // get the current card
         $giveexercise = Giveexercises::find($id);
+        $collection = Giveexercises::where('exercise_id', '=', $giveexercise->exercise_id)->get();
+        // which is 1 above $id???
 
-        $opdrachtID = $giveexercise->exercise_id;
-
-        // get previous card id
-        if (empty($previous)) {
-            $previous = Giveexercises::where('id', '<', $giveexercise->id)->max('id');
-        }
-
-        if ($previous == 0){
-            $previous = Giveexercises::where('id', '>', $giveexercise->id == 0)->max('id');
-        }
-
-        // get next card id
-        if ($opdrachtID == $giveexercise->exercise_id) {
-            $next = Giveexercises::where('id', '>', $giveexercise->id)->min('id');
-            echo "1";
-        }
-
-        if ($next == 0){
-            $next = Giveexercises::where('id', '>', $giveexercise->id== 0)->min('id');
-            echo "2";
+        foreach($collection as $exercise) {
+            if ($exercise['id'] == $id) {
+                $next = $collection->where('id', '>', $id)->first();
+                $previous = $collection->where('id', '<', $id)->reverse()->first();
+            }
         }
 
         // return viewS
