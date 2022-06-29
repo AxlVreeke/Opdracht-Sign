@@ -293,6 +293,8 @@ hr{
     margin-bottom: 40px;
 }
 
+
+.home-design-button button,
 .home-design-button a{
     transition: ease;
     transition-duration: 0.3s;
@@ -306,6 +308,7 @@ hr{
     height: 40px;
 }
 
+
 .home-design-button button:hover,
 .home-design-button a:hover{
     transition: ease;
@@ -314,6 +317,9 @@ hr{
     border-radius: 25px;
 }
 
+.home-design-button button:focus,
+.home-design-button button:active,
+.home-design-button button:hover:active,
 .home-design-button a:focus,
 .home-design-button a:active,
 .home-design-button a:hover:active {
@@ -446,9 +452,10 @@ table.sortable thead {
     font-weight: bold;
 }
 
-/* table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
-    content: " \25B4\25BE"
-} */
+.table>:not(caption)>*>* {
+    border-bottom: 0px;
+    border-top: 0px;
+}
 
 /* detail-page */
 
@@ -485,17 +492,17 @@ table.sortable thead {
 
 .card-wrapper{
     display: none;
-    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-right: -24px;
 }
 
 .card{
     width: 22rem;
     padding-left: 0px;
     padding-right: 0px;
-    margin-bottom: 30px;
-    border-radius: 8px;
+    margin: 0px 26px 30px 0px;
     border: solid 1px #c9c9c9;
 }
 
@@ -508,6 +515,14 @@ table.sortable thead {
 .card-body button{
     display: flex;
     align-items: flex-end;
+}
+
+.show-file{
+    width: 370px;
+    max-height: 800px;
+    height: auto;
+    margin-top: 5px;
+    border-radius: 5px;
 }
 
 /* buttons show */
@@ -524,9 +539,9 @@ table.sortable thead {
     padding: 0.8rem 1.7rem 0.8rem 1.7rem;
     color:white;
     border-radius: 1.5vw;
-    font-weight: bolder;
     font-size: 1rem;
     box-shadow: 0.1rem 0.2rem 1px 1px hsla(0,0%,0%, 0.2);
+    font-weight: bold;
 }
 
 .show-assign-button-wrapper .show-assign-button{
@@ -535,7 +550,6 @@ table.sortable thead {
     padding: 0.4rem 2.2rem 0.5rem 2.2rem;
     color:white;
     border-radius: 6px;
-    font-weight: bolder;
     font-size: 1rem;
     box-shadow: 2px 3px 3px #9ca3af;
 }
@@ -558,11 +572,11 @@ table.sortable thead {
     margin-top: 50px;
 }
 
-.show-button{
+.show-button-edit{
     margin: 0px 20px;
 }
 
-.show-button .btn-secondary:hover{
+.show-button-edit .btn-secondary:hover{
     background-color: #042759;
 }
 
@@ -572,7 +586,14 @@ table.sortable thead {
     font-weight: bold;
 }
 
-/* forms */
+/* jobs show page */
+
+.jobs-button-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 
 

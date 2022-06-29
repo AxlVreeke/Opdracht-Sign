@@ -39,6 +39,7 @@
 <script>
     function clicked() {
         return alert('Opdracht succesvol ingeleverd!');
+    }
 </script>
 
 <?php

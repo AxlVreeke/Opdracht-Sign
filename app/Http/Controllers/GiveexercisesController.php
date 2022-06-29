@@ -58,8 +58,33 @@ class GiveexercisesController extends Controller
      */
     public function show($id)
     {
-        $giveexercise = Giveexercises::findOrFail($id);
-        return view('pages/exercises/jobs/show')->with('giveexercise', $giveexercise);
+        // get the current card
+        $giveexercise = Giveexercises::find($id);
+
+        $opdrachtID = $giveexercise->exercise_id;
+
+        // get previous card id
+        if (empty($previous)) {
+            $previous = Giveexercises::where('id', '<', $giveexercise->id)->max('id');
+        }
+
+        if ($previous == 0){
+            $previous = Giveexercises::where('id', '>', $giveexercise->id == 0)->max('id');
+        }
+
+        // get next card id
+        if ($opdrachtID == $giveexercise->exercise_id) {
+            $next = Giveexercises::where('id', '>', $giveexercise->id)->min('id');
+            echo "1";
+        }
+
+        if ($next == 0){
+            $next = Giveexercises::where('id', '>', $giveexercise->id== 0)->min('id');
+            echo "2";
+        }
+
+        // return viewS
+        return view('pages/exercises/jobs/show')->with('giveexercise', $giveexercise)->with('previous', $previous)->with('next', $next);
     }
 
     /**
@@ -93,6 +118,8 @@ class GiveexercisesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Giveexercises::destroy($id);
+        return redirect()->route('exercises.index');
+
     }
 }

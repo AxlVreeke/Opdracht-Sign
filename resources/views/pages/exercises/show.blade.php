@@ -39,16 +39,17 @@
 
         <div style="margin-top: 30px" class="show-title">
             <h4><b>Bestand:</b></h4>
-            <span> <img style="width: 370px; max-height: 800px; height: auto; margin-top: 10px;" src="{{asset('storage/user-img/'.$exercise->file)}}" width="70px" height="70px" alt="Uw foto"></span>
+            <span><img class="show-file" src="{{asset('storage/user-img/'.$exercise->file)}}" width="70px" height="70px" alt="Uw foto"></span>
+
         </div>
     </div>
 
     @if(auth()->user() == $exercise->user or auth()->user()->hasRole('admin'))
         <div class="show-button-wrapper">
-            <div class="show-button">
+            <div class="show-button-edit">
                 <a class="btn btn-secondary navy" href="{{route('exercises.edit', $exercise->id)}}" role="button">Aanpassen</a>
             </div>
-            <div class="show-button">
+            <div class="show-button-edit">
                 <form action="{{route('exercises.destroy', $exercise->id)}}" method="post">
                     @csrf
                     @method('DELETE')
@@ -77,17 +78,26 @@
                         <tr>
                             <th style="min-width: 220px; max-width: 220px" scope="col">Ingeleverd door</th>
                             <th style="min-width: 400px" scope="col">Informatie</th>
-                            <th style="width: 200px" scope="col"></th>
+                            <th style="width: 200px;" scope="col"></th>
                         </tr>
                         </thead>
                         <tbody>
                         @foreach($exercise->giveexercises as $giveexercise)
                             <tr>
                                 <td>{{ $giveexercise->user->name }}</td>
-                                <td>{{ $giveexercise->description }}</a></td>
+                                <td>{{ $giveexercise->description }}</td>
                                 <td>
-                                    <div style="max-width: 200px;" class="show-assign-button-wrapper">
-                                        <a class="btn show-assign-button" href="{{ route('giveexercises.show', $giveexercise->id) }}" role="button">Meer info</a>
+                                    <div style="display: flex;">
+                                        <div style="max-width: 200px;" class="show-assign-button-wrapper">
+                                            <a class="btn show-assign-button" href="{{ route('giveexercises.show', $giveexercise->id) }}" role="button">Meer info</a>
+                                        </div>
+                                        <div class="show-button-edit">
+                                            <form style="display: flex; justify-content: center;" action="{{route('giveexercises.destroy', $giveexercise->id)}}" method="post">
+                                                @csrf
+                                                @method('DELETE')
+                                                <input type="submit" value="Verwijderen" class="btn btn-danger">
+                                            </form>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
@@ -95,7 +105,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="card-wrapper"  id="cardWrapper">
+                <div class="card-wrapper" id="cardWrapper">
                     @foreach($exercise->giveexercises as $giveexercise)
                         <div class="card">
                             <span> <img class="card-img-top" src="{{asset('storage/user-img/'.$giveexercise->file)}}" alt="Uw foto"></span>
@@ -104,6 +114,13 @@
                                 <p><b>Informatie:</b> {{ $giveexercise->description }}</p>
                                 <div style="justify-content: flex-start; align-items: flex-end;" class="show-assign-button-wrapper">
                                     <a class="btn show-assign-button" href="{{ route('giveexercises.show', $giveexercise->id) }}" role="button">Meer info</a>
+                                </div>
+                                <div style="display: flex; justify-content: flex-start; margin: 0; padding-top: 15px;" class="show-button-edit">
+                                    <form action="{{route('giveexercises.destroy', $giveexercise->id)}}" method="post">
+                                        @csrf
+                                        @method('DELETE')
+                                        <input type="submit" value="Verwijderen" class="btn btn-danger">
+                                    </form>
                                 </div>
                             </div>
                         </div>

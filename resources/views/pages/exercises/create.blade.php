@@ -59,7 +59,6 @@
                 </div>
             </div>
 
-
             <div class="form-group row">
                 <label style="font-weight: bold" for="end_date" class="col-sm-2 col-form-label">Deadline:</label>
                 <div class="col-sm-10">
@@ -80,6 +79,6 @@
         </form>
     </div>
     @endhasexactroles
-<script src="../../js/char-countdown.js"></script>
-<script src="../../js/max-date.js"></script>
+<script src="{{asset('/js/char-countdown.js')}}"></script>
+<script src="{{asset('/js/max-date.js')}}"></script>
 @endsection

@@ -9,6 +9,7 @@ use App\Http\Controllers\GiveexercisesController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ExercisesController;
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\CardController;
 use App\Models\Job;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
