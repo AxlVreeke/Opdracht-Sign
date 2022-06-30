@@ -37,14 +37,14 @@
                 <table class="table sortable table-striped">
                     <thead style="background-color: #78034a">
                     <tr>
-                        <th scope="col">Opdracht</th>
-                        <th scope="col">Informatie</th>
+                        <th scope="col">Ingeleveerde opdrachtnaam</th>
+                        <th scope="col">Opdrachtnaam</th>
                     </tr>
                     </thead>
                     <tbody>
                     @forelse($user->giveexercises as $giveexercise)
                         <tr>
-                            <td>{{ $giveexercise->description }}<p>{{ $giveexercise->user->name }}</p></td>
+                            <td><span><a href="{{ route('giveexercises.show', $giveexercise->id) }}">{{ $giveexercise->description }}</span></a><p>{{ $giveexercise->user->name }}</p></td>
                             <td>{{ $giveexercise->exercise->name }}</td>
                         </tr>
                         @empty
