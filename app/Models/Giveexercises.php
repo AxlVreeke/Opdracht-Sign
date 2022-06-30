@@ -26,6 +26,10 @@ class Giveexercises extends Model
         return $this->belongsTo(Giveexercises::class);
     }
 
+    public function comment() {
+        return $this->hasMany(Comment::class);
+    }
+
     protected static function booted()
     {
         static::creating(function ($giveexercise) {

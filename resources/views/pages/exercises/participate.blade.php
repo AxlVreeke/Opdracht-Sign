@@ -27,7 +27,6 @@
                 <input type="file" name="file" class="form-control" id="file" value="">
             </div>
         </div>
-
         <div class="form-group">
             <input type="hidden" name="exercise_id" value="{{$exercise->id}}">
             <input class="mt-4 btn btn-primary" onclick="return clicked();" type="submit" value="Opslaan">
