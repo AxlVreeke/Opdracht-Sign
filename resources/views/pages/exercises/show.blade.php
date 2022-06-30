@@ -40,7 +40,6 @@
         <div style="margin-top: 30px" class="show-title">
             <h4><b>Bestand:</b></h4>
             <span><img class="show-file" src="{{asset('storage/user-img/'.$exercise->file)}}" width="70px" height="70px" alt="Uw foto"></span>
-
         </div>
     </div>
 
@@ -62,6 +61,7 @@
     @if(auth()->user()->assignedToExercise($exercise->id))
         @include('pages.exercises.participate')
     @endif
+
 
     @if(auth()->user()->hasRole('admin') ||  $exercise->user_id == auth()->user()->id)
         <div style="padding: 25px 25px" class="participants">
