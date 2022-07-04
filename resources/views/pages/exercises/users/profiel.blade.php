@@ -37,15 +37,15 @@
                 <table class="table sortable table-striped">
                     <thead style="background-color: #78034a">
                     <tr>
-                        <th scope="col">Ingeleveerde opdrachtnaam</th>
                         <th scope="col">Opdrachtnaam</th>
+                        <th style="min-width: 250px; max-width: 400px;" scope="col">Informatie</th>
                     </tr>
                     </thead>
                     <tbody>
                     @forelse($user->giveexercises as $giveexercise)
                         <tr>
-                            <td><span><a href="{{ route('giveexercises.show', $giveexercise->id) }}">{{ $giveexercise->description }}</span></a><p>{{ $giveexercise->user->name }}</p></td>
-                            <td>{{ $giveexercise->exercise->name }}</td>
+                            <td><span><a href="{{ route('giveexercises.show', $giveexercise->id) }}">{{ $giveexercise->exercise->name }}</a></span><p>{{ $exercise->description }}</p></td>
+                            <td>{{ $giveexercise->description }}</td>
                         </tr>
                         @empty
                         <p>Je hebt nog geen opdrachten aangemaakt.</p>

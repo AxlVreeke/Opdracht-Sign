@@ -21,25 +21,27 @@
             <h4><b>Bestand:</b></h4>
             <span><img class="show-file" src="{{asset('storage/user-img/'.$giveexercise->file)}}" width="70px" height="70px" alt="Uw foto"></span>
         </div>
-        <hr>
+        <hr style="margin-top: 25px;">
 
-        <form method="post" action="{{route('comments.store')}}" method="POST" enctype="multipart/form-data">
-            @csrf
-
-            <div class="show-title">
-                <h4><b>Commentaar:</b></h4>
-                <div style="padding-top: 5px; margin-bottom: 30px; position: relative;">
-                    <textarea name="comment" class="form-control" id="comment" maxlength="255" placeholder="vul hier uw commentaar in" cols="30" rows="10"></textarea>
-                    <div style="right: 10px;" id="count" class="char-amount">255</div>
-                </div>
-                <div class="jobs-button-flex">
-                    <div class="show-assign-button-wrapper">
-                        <input type="hidden" name="exercise_id" value="{{$giveexercise->id}}">
-                        <input class="mt-4 btn btn-primary" onclick="return clicked();" type="submit" value="Opslaan">
+        @if(auth()->user() != $giveexercise->user)
+            <form method="post" action="{{route('comments.store')}}" method="POST" enctype="multipart/form-data">
+                @csrf
+                <div class="show-title">
+                    <h4><b>Commentaar:</b></h4>
+                    <div style="padding-top: 5px; margin-bottom: 30px; position: relative;">
+                        <textarea name="comment" class="form-control" id="comment" maxlength="255" placeholder="vul hier uw commentaar in" cols="30" rows="10"></textarea>
+                        <div style="right: 10px;" id="count" class="char-amount">255</div>
                     </div>
-            </div>
-        </form>
-            <hr>
+                    <div class="jobs-button-flex">
+                        <div class="show-assign-button-wrapper">
+                            <input type="hidden" name="exercise_id" value="{{$giveexercise->id}}">
+                            <input class="mt-4 btn btn-primary" onclick="return clicked();" type="submit" value="Opslaan">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        <hr>
+        @endif
         <div class="jobs-button-flex">
             <div class="show-assign-button-wrapper">
                 @if($previous)
