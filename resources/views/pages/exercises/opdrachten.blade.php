@@ -2,16 +2,6 @@
 
 @section('content')
 
-    <?php
-
-//    $exercise = Exercises::find($id);
-//    $timezone = date_default_timezone_get();
-//    if ($exercise->end_date = $timezone){
-//        dd($exercise->id);
-//    }
-
-    ?>
-
     <div class="container">
         <div class="main-title">OPDRACHTEN</div>
         <form id="report-page-form-form" action="{{route('filter-opdracht')}}">
@@ -49,13 +39,15 @@
                 </thead>
                 <tbody>
                 @forelse($exercises as $exercise)
+
+                    @if( $exercise->end_date < Date('Y-m-d') )
                     <tr>
                         <td><span><a href="{{ route('exercises.show', $exercise->id) }}">{{ $exercise->name }}</span></a><p>{{ $exercise->description }}</p></td>
                         <td>{{ $exercise->job->name }}</td>
                         <td>{{ $exercise->entries }}</td>
                         <td>{{ \Carbon\Carbon::createFromTimestamp(strtotime($exercise->end_date))->format('d-m-Y')}}</td>
                     </tr>
-
+                    @endif
                 @empty
                     <p>Er zijn geen opdrachten in deze categorie.</p>
                     <style>thead{display: none;}</style>

@@ -45,12 +45,12 @@
         <div class="jobs-button-flex">
             <div class="show-assign-button-wrapper">
                 @if($previous)
-                    <a class="btn show-assign-button" href="{{ URL::to( 'exercises/giveexercises/' . $previous->id ) }}" role="button">Previous</a>
+                    <a style="width: 125px;" class="btn show-assign-button" href="{{ URL::to( 'exercises/giveexercises/' . $previous->id ) }}" role="button">Previous</a>
                 @endif
             </div>
             <div class="show-assign-button-wrapper">
                 @if($next)
-                    <a class="btn show-assign-button" href="{{ URL::to( 'exercises/giveexercises/' . $next->id ) }}" role="button">Next</a>
+                    <a style="width: 125px;" class="btn show-assign-button" href="{{ URL::to( 'exercises/giveexercises/' . $next->id ) }}" role="button">Next</a>
                 @endif
             </div>
         </div>
