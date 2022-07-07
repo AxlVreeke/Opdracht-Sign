@@ -40,7 +40,7 @@
                 <tbody>
                 @forelse($exercises as $exercise)
 
-                    @if( $exercise->end_date < Date('Y-m-d') )
+                    @if( $exercise->end_date > Date('Y-m-d') )
                     <tr>
                         <td><span><a href="{{ route('exercises.show', $exercise->id) }}">{{ $exercise->name }}</span></a><p>{{ $exercise->description }}</p></td>
                         <td>{{ $exercise->job->name }}</td>
