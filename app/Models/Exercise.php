@@ -24,6 +24,16 @@ class Exercise extends Model
         return $this->hasMany(Participate::class);
     }
 
+    public function isStudentRegistered($id) {
+        $giveExercises = $this->giveexercises;
+        foreach($giveExercises as $entry) {
+            if ($entry->user_id == $id) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public function giveexercises() {
         return $this->hasMany(Giveexercises::class);
     }

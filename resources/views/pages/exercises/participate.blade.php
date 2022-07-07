@@ -1,16 +1,17 @@
 <div style="margin-top: 50px" class="container">
-    <div class="main-title">DEELNEMEN AAN {{$exercise->name}}</div>
-    <hr>
-    @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
 
+    @if( !$exercise->isStudentRegistered( auth()->user()->id ) )
+        <div class="main-title">DEELNEMEN AAN {{$exercise->name}}</div>
+        <hr>
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
     <form method="post" action="{{route('giveexercises.store')}}" method="POST" enctype="multipart/form-data">
         @csrf
 
@@ -33,6 +34,9 @@
             <input class="mt-4 btn btn-primary" onclick="return clicked();" type="submit" value="Opslaan">
         </div>
     </form>
+    @else
+        <p class="alert alert-danger">Je hebt al iets ingeleverd bij deze opdracht...</p>
+    @endif
 </div>
 <script src="../../js/char-countdown.js"></script>
 

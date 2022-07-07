@@ -22,6 +22,8 @@ class Giveexercises extends Model
         return $this->belongsTo(Exercise::class);
     }
 
+
+
     protected static function booted()
     {
         static::creating(function ($giveexercise) {
