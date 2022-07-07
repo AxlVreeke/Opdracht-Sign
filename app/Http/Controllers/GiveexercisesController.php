@@ -58,8 +58,20 @@ class GiveexercisesController extends Controller
      */
     public function show($id)
     {
-        $giveexercise = Giveexercises::findOrFail($id);
-        return view('pages/exercises/jobs/show')->with('giveexercise', $giveexercise);
+        // get the current card
+        $giveexercise = Giveexercises::find($id);
+        $collection = Giveexercises::where('exercise_id', '=', $giveexercise->exercise_id)->get();
+        // which is 1 above $id???
+
+        foreach($collection as $exercise) {
+            if ($exercise['id'] == $id) {
+                $next = $collection->where('id', '>', $id)->first();
+                $previous = $collection->where('id', '<', $id)->reverse()->first();
+            }
+        }
+
+        // return viewS
+        return view('pages/exercises/jobs/show')->with('giveexercise', $giveexercise)->with('previous', $previous)->with('next', $next);
     }
 
     /**
@@ -93,6 +105,8 @@ class GiveexercisesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Giveexercises::destroy($id);
+        return redirect()->route('exercises.index');
+
     }
 }

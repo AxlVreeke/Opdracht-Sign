@@ -7,7 +7,6 @@ use App\Models\Job;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-
 class SearchController extends Controller
 {
     public function filterOpdracht() {

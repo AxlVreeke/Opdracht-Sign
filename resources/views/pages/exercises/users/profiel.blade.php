@@ -38,20 +38,14 @@
                     <thead style="background-color: #78034a">
                     <tr>
                         <th scope="col">Opdrachtnaam</th>
-                        <th scope="col">Informatie</th>
-                        <th scope="col">Klus</th>
-                        <th style="min-width: 210px" scope="col">Aantal inzendingen</th>
-                        <th style="min-width: 150px" scope="col">Eind Datum</th>
+                        <th style="min-width: 250px; max-width: 400px;" scope="col">Informatie</th>
                     </tr>
                     </thead>
                     <tbody>
-                    @forelse($user->giveexercises as $exercise)
+                    @forelse($user->giveexercises as $giveexercise)
                         <tr>
-                            <td><span><a href="{{ route('exercise.show', $exercise->exercise_id) }}">{{ $exercise->exercise->name }}</span></a><p>{{ $exercise->exercise->description }}</p></td>
-                            <td>{{ $exercise->description }}</td>
-                            <td>{{ $exercise->exercise->job->name}}</td>
-                            <td>{{ $exercise->exercise->entries}}</td>
-                            <td>{{ \Carbon\Carbon::createFromTimestamp(strtotime($exercise->exercise->end_date))->format('d-m-Y')}}</td>
+                            <td><span><a href="{{ route('giveexercises.show', $giveexercise->id) }}">{{ $giveexercise->exercise->name }}</a></span><p>{{ $exercise->description }}</p></td>
+                            <td>{{ $giveexercise->description }}</td>
                         </tr>
                         @empty
                         <p>Je hebt nog geen opdrachten aangemaakt.</p>

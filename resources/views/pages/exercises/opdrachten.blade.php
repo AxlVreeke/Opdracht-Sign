@@ -1,6 +1,17 @@
 @extends('base')
 
 @section('content')
+
+    <?php
+
+//    $exercise = Exercises::find($id);
+//    $timezone = date_default_timezone_get();
+//    if ($exercise->end_date = $timezone){
+//        dd($exercise->id);
+//    }
+
+    ?>
+
     <div class="container">
         <div class="main-title">OPDRACHTEN</div>
         <form id="report-page-form-form" action="{{route('filter-opdracht')}}">
